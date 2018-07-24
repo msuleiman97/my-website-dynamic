@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MY WEBSITE</title>
+    <meta charset="utf-8">
+    {%load staticfiles %}
+    <link rel="stylesheet" href={% static 'css/bootstrap.min.css' %} type="text/css">   
+    <link rel="stylesheet" href={% static '../personal/static/css/stylesheet.css' %} type="text/css">
+   
+    <!-- fontawsome file link  -->
+    <link href="../../static/personal/css/StyleSheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    </head>
+  <body  style="margin-bottom: 0; padding-bottom: 0; padding-top: 55px;">
+      
+
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-light bg-navyblue">
+    <a class="navbar-brand" href="#">
+    <img src="../static/img/favicon.ico" width="30" height="30"  class="d-inline-block align-top bg-navyblue" alt="">
+    COMPANY NAME
+  </a>
+  <button class="bg-navyblue navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText col-white" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto  mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link " href={% url "index" %}>Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link col-white" href={% url "about" %}>About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link col-white" href={% url "services" %}>Services</a>
+      </li>
+
+      <li class="nav-item ">
+        <a class="nav-link col-white" href={% url "portfolio" %}>Portfolio</a>
+      </li>
+        
+      <li class="nav-item">
+        <a class="nav-link col-white" href={% url "contact" %}>Contact Us</a> 
+      </li>
+    </ul>  
+    <!--search -->
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search...." aria-label="Search">
+      <button class="btn btn-light col-navyblue my-2 my-sm-0" type="submit">Search</button>
+    </form>
+      
+  </div>
+</nav>
+    
+    
+    
+ </header>
+<!--end header -->
+    <div>
+        {%block content%}
+        {%endblock%}
+    </div>
+    
+<!--start footer -->
+      <section id="footer">
+          <div class="container">
+        <p class="float-right non-uper" style="color: #2facb1;"><a href="#" style="color: white;" class="non-uper"> <i class="fas fa-arrow-up" ></i>  Back to top</a></p>
+        <p style="text-indent: 0px; color: white;">&copy; 2018-2019 All Right are reserved</p>
+          </div>
+      </section>
+<!--end  footer -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
+   
+    <script src="../../static/personal/js/bootstrap.min.js"></script>
+</body>
+
+
+
+</html>

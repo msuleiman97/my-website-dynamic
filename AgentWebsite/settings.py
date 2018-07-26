@@ -120,3 +120,18 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+#sendgrid settings 
+SEND_GRID_API_KEY='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'
+EMAIL_HOST='smtp.sendgrid.net'
+EMAIL_HOST_USER='m.suleiman1997'
+EMAIL_HOST_PASSWORD='iamthebest2018'
+EMAIL_PORT=587
+EMAIL_USE_TLS=True
+DEFAULT_FROM_EMAIL='m.suleiman1997@gmail.com'
+ACCOUNT_EMAIL_SUBJECT_PREFIX='Contact email received from website'
+EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
+
+
+

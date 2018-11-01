@@ -2,24 +2,26 @@
         {%block content%}
 <!--start about txt -->
 <br>
+
       <section id="about-txt">
+          <br><br>
          <div class="container">
-            
+
            <div class="jumbotron jumbotron-fluid">
               <div class="container">
                   <h1 class="display-4 col-navyblue">Start Building Your Website .</h1>
                    <p class="lead">The first step in your online juarney is to contact us and we will hear from you , depending on your excpectation and requirements we build for you creative and suitable website .</p>
               </div>
             </div>
-          
+
          </div>
-    
+
       </section>
-     
+
 <!--end about txt -->
 
 <!--start contact us form -->
-     
+
       <section id="our-mission">
           <br>
         <div class="container">
@@ -35,7 +37,7 @@
 
                     <form id="contact-form" method="post" action="." role="form">
                         {% csrf_token %}
-                           {{form.as_p }}
+                           {{ form.as_p }}
                         <div class="messages"></div>
 
                         <div class="controls">
@@ -100,11 +102,11 @@
         </div>
           <br>
       </section>
-      
+
 <!--end contact us form -->
       <div id="icon-bet">
       <center><h2><img src="../../static/personal/img/telphone.gif" width="90px" height="90px" style=" " ></h2> </center>
-      
+
       </div>
 <!--start template2-->
       <section>
@@ -112,14 +114,13 @@
         <div class="container">
             <div id="contact">
                 <h2 class="col-navyblue" > Contact Information .</h2> <br>
-               
+
             <h6 style="color: darkgray;"><i class="fas fa-envelope col-navyblue" ></i> &nbsp;&nbsp; phone :  +91 958 152 2956</h6> <br>
             <h6 style="color: darkgray;"><i class="fas fa-phone col-navyblue"></i>&nbsp;&nbsp;  e-mail :  m.suleiman@gmail.com</h6><br>
             <h6 style="color: darkgray;"><i class="fas fa-map-marked col-navyblue"></i>&nbsp;&nbsp;location :  hyderabad , india</h6><br>
             </div>
-        </div> 
+        </div>
       </section>
       <br>
 <!--end our services -->
         {%endblock%}
-   

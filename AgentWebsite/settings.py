@@ -24,9 +24,14 @@ SECRET_KEY = 'dngk9_^hb+f^4+x-a3=!8#s790mdi@s8$@fpj2ytm@fa4hr1_!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+TEMPLATE_DEBUG = DEBUG
+ALLOWED_HOSTS = ['msuleiman1997.pythonanywhere.com']
 
-ALLOWED_HOSTS = []
-
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'm.suleiman1997@gmail.com'
+EMAIL_HOST_PASSWORD = 'iamthebest2018'
+EMAIL_PORT=587
+EMAIL_USE_TLS = True
 
 # Application definition
 
@@ -121,17 +126,17 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-
-#sendgrid settings 
-SEND_GRID_API_KEY='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'
-EMAIL_HOST='smtp.sendgrid.net'
-EMAIL_HOST_USER='m.suleiman1997'
-EMAIL_HOST_PASSWORD='iamthebest2018'
-EMAIL_PORT=587
-EMAIL_USE_TLS=True
-DEFAULT_FROM_EMAIL='m.suleiman1997@gmail.com'
-ACCOUNT_EMAIL_SUBJECT_PREFIX='Contact email received from website'
-EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
+STATIC_ROOT='/home/msuleiman1997/my-website-dynamic/static'
+#sendgrid settings
+#SEND_GRID_API_KEY='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'
+#EMAIL_HOST='smtp.sendgrid.net'
+#EMAIL_HOST_USER='msuleiman1997'
+#EMAIL_HOST_PASSWORD='password@sendgrid568'
+#EMAIL_PORT=587
+#EMAIL_USE_TLS=True
+#DEFAULT_FROM_EMAIL='m.suleiman1997@hotmail.com'
+#ACCOUNT_EMAIL_SUBJECT_PREFIX='Recived new message from your website'
+#EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
 
 
 

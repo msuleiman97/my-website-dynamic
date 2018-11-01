@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.core.mail import send_mail
 from django.conf import settings
 from django.template.loader import get_template
-from tkinter import messagebox
+from .forms import ContactForm
 
 def index(request):
     return render(request,'personal/home.html')
@@ -17,31 +17,39 @@ def portfolio(request):
     return render(request,'personal/portfolio.html')
 
 def contact(request):
-    if request.method=="POST":
-        name = request.POST.get("name")
-        surname = request.POST.get("surname")
-        phone =request.POST.get("phone")
-        email=request.POST.get("email")
-        message=request.POST.get("message")
-        #email to ourself the submitted contact message
-        subject='Contact Form Received' 
-        from_email= settings.DEFAULT_FROM_EMAIL
-        to_email=[settings.DEFAULT_FROM_EMAIL]
-        
-        #format
-        context={
-            'user':name,
-            'email':email,
-            'message':message
+    form=ContactForm(request.POST or None)
+    if form.is_valid():
+        form_email=form.cleaned_data.get('email')
+        form_message=form.cleaned_data.get('message')
+        form_first_name=form.cleaned_data.get('first_name')
+        form_last_name=form.cleaned_data.get('last_name')
+
+        subject= 'Mail From Your Website'
+        from_email= settings.EMAIL_HOST_USER
+        to_email=[from_email, 'm.suleiman1997@gmail.com']
+
+        contact_message= "%s: %s via %s"%(
+            form_first_name,
+            form_last_name,
+            form_message,
+            form_email)
+        some_html_message= """
+          <h1>Hello </h1>
+          """
+        send_mail(subject,
+                  contact_message,
+                  form_email,
+                  to_email,
+                  fail_silently=False)
+
+
+    context={
+        "form": form,
         }
-        contact_message=get_template('contact_message.txt').render(context)
-        send_mail(subject,contact_message, from_email,to_email, fail_silently=True)
-        messagebox.showinfo("Thank you ", "your message  been succussfully received .")
-        return redirect("/contact/")
+
     return render(request,'personal/contact.html')
 
 
 
-    
-            
-            
+
+

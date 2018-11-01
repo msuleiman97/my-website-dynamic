@@ -5,7 +5,15 @@ You received a message from your contact form , from :
 
 This is what they said:
 
+
+
+
+
 {{message}}
+
+
+
+
 
 
 Replay to this email :

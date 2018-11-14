@@ -17,8 +17,8 @@ a:hover.non-uper {
 }
 a:hover { 
     color:white !important;
-    text-transform: uppercase;
-}
+    }
+
 .col-navyblue{
     
     color:  #2facb1 !important;
@@ -37,6 +37,15 @@ a:hover {
     font-style: normal;
     font-size: 18px;
 }
+/* navbar style */
+
+@media (min-width: 7000px){
+  .navbarText ul{
+    margin-left: 200px;
+  }
+
+}
+/* navbar style */
 /* start index style */
 .box{
     margin:7px;

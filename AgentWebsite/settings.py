@@ -25,7 +25,7 @@ SECRET_KEY = 'dngk9_^hb+f^4+x-a3=!8#s790mdi@s8$@fpj2ytm@fa4hr1_!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
-ALLOWED_HOSTS = ['msuleiman1997.pythonanywhere.com']
+ALLOWED_HOSTS = ['www.mohwebdeveloper.com']
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'm.suleiman1997@gmail.com'

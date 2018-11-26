@@ -23,5 +23,6 @@ urlpatterns = [
     url(r'^$',views.index, name='index'),
     url(r'^about/$',views.about, name='about'),
     url(r'^contact/$',views.contact, name='contact'),
-    url(r'^services/$',views.services, name='services'),    url(r'^portfolio/$',views.portfolio, name='portfolio'),
+    url(r'^services/$',views.services, name='services'),  
+    url(r'^portfolio/$',views.portfolio, name='portfolio'),
 ]

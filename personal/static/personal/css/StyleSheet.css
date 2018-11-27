@@ -80,12 +80,20 @@ body{
 /* navbar style */
 nav a{
     color: #9b9ea0;
-    font-size: 25px;
+    font-size: 20px;
 }
 nav a:hover{
     color: #ff8c60;
   
 }
+.light-col {
+    color: #9b9ea0;
+}
+
+a:hover.lhover { /* orang color hover */
+    color:  #ff8c60;
+}
+
 .light-dark{
     background-color:  #ff8c60;
 }

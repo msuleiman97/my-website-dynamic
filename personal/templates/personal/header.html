@@ -8,10 +8,13 @@
     
     <meta charset="utf-8">
     {%load staticfiles %}
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <meta charset="utf-8" >
     <link rel="stylesheet" href={% static 'personal/css/bootstrap.min.css' %} type="text/css">
     <link rel="stylesheet" href={% static 'personal/css/stylesheet.css' %} type="text/css">
     <link rel="stylesheet" href="../../static/personal/css/stylesheet.css">
+
+    <!-- google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Changa:300|Tajawal" rel="stylesheet">
     <!-- fontawsome file link  -->
 
     <link href="../../static/personal/css/StyleSheet.css" rel="stylesheet">
@@ -62,7 +65,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
-            <li class="nav-item">
+            <li class="nav-item ">
               <a class="nav-link js-scroll-trigger" href={% url 'contact' %}>تواصل معنا</a>
             </li>
             <li class="nav-item">
@@ -98,8 +101,58 @@
         {%block content%}
         {%endblock%}
     
+<!-- top footer-->
+<section class="blue-col white-col" id="top-footer">
+  <div class="container">
+    <br>
+    <div class="row">
+   
 
+    <div class="col-lg-4 col-md-12">
+    <center>
+    <h4>رؤيتنا</h4>
+    
+    <p>ان نكون الافضل في مجالنا عن طريق تقديم احدث الالأدوات التقنية للعملاء . ن نكون الافضل في مجالنا عن طريق تقديم احدث الالأدوات التقنية للعملاء .ن نكون الافضل في مجالنا عن طريق تقديم احدث الالأدوات التقنية للعملاء .</p></center>
+    <br>
+    </div>
+    <br>
+    <div class="col-lg-4 col-md-12">
+     <center> <h4>تابعنا </h4>
+
+      <br>
+   <h2><a href="https://www.facebook.com/mohwebdeveloper1/?modal=admin_todo_tour" target="blank"><i class="fab fa-facebook-f white-col"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://www.instagram.com/mohwebdeveloper/" target="blank"><i class="fab fa-instagram white-col"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://www.linkedin.com/in/%D9%85%D8%B7%D9%88%D8%B1-%D9%85%D9%88%D8%A7%D9%82%D8%B9-moh-webdeveloper-36173a175/" target="blank"><i class="fab fa-linkedin white-col"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://twitter.com/mohamedwebdeve1" target="blank" class="lhover"><i class="fab fa-twitter white-col"></i></a> &nbsp;&nbsp;&nbsp;&nbsp; </h2>
+     </center><br>
+     <br><br>
+    </div>
+
+    <div class="col-lg-4 col-md-12 ">
+    <div class="row">
+    <div class="col-lg-6 col-md-6 tx-right">
+     <center> 
+    
+    <h5><a class="lhover white-col" href="#">تصميمم صفحات</a> </h5><br>
+    <h5><a class="lhover white-col" href="#">تطوير مواقع</a></h5> <br>
+    <h5><a class="lhover white-col" href="#">تسويق إلكتروني</a></h5></center><br>
+    </div>
+    <div class="col-lg-6  col-md-6 tx-right">
+  
+    
+    <h5><a class="lhover white-col" href={% url 'index' %}>الرئيسية</a></h5> <br>
+    <h5><a class="lhover white-col" href={% url 'about' %}>من نحن </a></h5> <br>
+    <h5><a class="lhover white-col" href={% url 'portfolio' %}>اعمالنا</a> </h5> <br>
+    <h5><a class="lhover white-col" href={% url 'contact' %}>تواصل معنا</a> </h5><br>
+      </div>
+   </div>
+</div> 
+    </div>
+  </div>   
+</section>
+<!-- end top footer-->
 <!--start footer -->
+
       <section id="footer">
           <div class="container">
         <p class="float-right non-uper" style="color: #2facb1;"><a href="#" style="color: white;" class="non-uper"> <i class="fas fa-arrow-up" ></i>  Back to top</a></p>

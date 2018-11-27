@@ -89,6 +89,9 @@ nav a:hover{
 .light-col {
     color: #9b9ea0;
 }
+a.lhover {
+    text-decoration: none;
+}
 
 a:hover.lhover { /* orang color hover */
     color:  #ff8c60;
@@ -100,6 +103,25 @@ a:hover.lhover { /* orang color hover */
 
 
 /* navbar style */
+/* top footer */
+#top-footer{
+    padding-top: 20px;
+    color: white;
+    height: auto;
+
+
+}
+#top-footer p{
+    font-family: 'Tajawal', sans-serif;
+}
+#top-footer h4{
+    font-family: 'Tajawal', sans-serif;
+}
+.tx-right h4,h5{
+    text-align: right;
+    font-family: 'Tajawal', sans-serif;
+}
+/* end top footer */
 /* start index style */
 .box{
     margin:7px;
@@ -185,4 +207,5 @@ caption-img{
     align-content: center;
    
 }
+
 /*  ###  end portfolio page ### */

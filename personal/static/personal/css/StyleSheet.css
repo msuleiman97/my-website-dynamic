@@ -211,8 +211,10 @@ caption-img{
 /*  ###  end portfolio page ### */
 
 /* home page style */
+.carousel-item{
+    height: 500px;
+}
 .sl-height{
-    overflow: hidden;
     height: 500px;
     width: 100%;
 }
@@ -225,7 +227,7 @@ caption-img{
     width: 100%;
 }
 @media (max-width:576px){
-    .sl-height{
+    .carousel-item {
     height: 240px;
     width: 100%;
 }

@@ -212,7 +212,8 @@ caption-img{
 
 /* home page style */
 .sl-height{
-    height: 490px;
+    overflow: hidden;
+    height: 500px;
     width: 100%;
 }
 .sl-height img{

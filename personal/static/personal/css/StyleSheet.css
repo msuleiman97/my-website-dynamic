@@ -1,7 +1,8 @@
 body{
 
    top: 0px !important;
-
+    overflow-y: visible;
+    overflow-x: hidden;
     
 }
 .blue-col{
@@ -212,7 +213,7 @@ caption-img{
 
 /* home page style */
 .carousel-item{
-    height: 500px;
+    
 }
 .sl-height{
     height: 500px;
@@ -240,5 +241,40 @@ caption-img{
     width: 100%;
 }
 
+}
+.org-circle {
+    border-radius:50%;
+    background-color:  #ff8c60;
+    color: white;
+    height: 200px;
+    width: 200px;
+    align-items: center;
+    margin: 5% auto; 
+   }
+  .org-circle i{
+     margin-top: 60px;
+     vertical-align: middle;
+  }
+  .org-circle h1{
+    font-weight: 1000;
+    margin-top: 60px;
+    font-size: 60px;
+
+  }
+  .col-blue{
+  color: #3786af;
+}
+.col-light{
+    color: #9b9ea0;
+}
+.col-org{
+    color: #ff8c60;
+}
+.grey-p{
+    color: grey;
+    text-align: center;
+    text-align-last: ;
+    padding: 10px;
+    font-size: 20px;
 }
 /* end home page style */

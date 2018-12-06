@@ -214,6 +214,18 @@ caption-img{
 /*  ###  end portfolio page ### */
 
 /* home page style */
+.banner h4{
+    text-align: right;
+    color: white;
+    line-height: 12px;
+
+}
+#banner{
+    background-image: url('{%static 'personal/img/download.jpg'%}');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .carousel-item{
     
 }
@@ -248,19 +260,19 @@ caption-img{
     border-radius:50%;
     background-color:  #ff8c60;
     color: white;
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     align-items: center;
     margin: 5% auto; 
    }
   .org-circle i{
-     margin-top: 60px;
+     margin-top: 42px;
      vertical-align: middle;
   }
   .org-circle h1{
     font-weight: 1000;
     margin-top: 60px;
-    font-size: 60px;
+    font-size: 55px;
 
   }
   .col-blue{

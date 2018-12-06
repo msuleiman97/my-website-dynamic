@@ -6,7 +6,90 @@
     <meta name="keywords" content="best website designer in sudan , best website designer in khartoum sudan , best website developer in khartoum sudan , best freelance website designer in khartoum sudan , best freelance website designer in kassala,responsive website designer in kassala , best responsive website developer in khartoum sudan , personal website designer in kassala , best website developer in khartoum sudan , professional website developer in khartoum sudan , best freelance professional websiten developer in kassala,bootstrap website template developer in khartoum sudan , best bootstrap website template developer in kassala, bootstrap responsive website freelance developer in khartoum , best bootstrap responsive bootstrap website freelance developer in kassala, latest website template designer in khartoum sudan , latest website template designer in kassala ,simple website template designer in khartoum sudan , simple website template designer in kassala, looking for freelance website developer in khartoum , looking for freelance website developer in kassala , freelance web designer and developer in khartoum sudan , freelance website developer in khartoum sudan , freelance website builder in khartoum sudan , freelance django developer in khartoum sudan , freelance django developer in kassala , python django freelance developer ,freelance django website developer in khartoum sudan , best freelance website django developer in  kassala,dynamic website developer in khartoum sudan,dynamic website developer in kassala.">
      <link href="../../static/personal/css/StyleSheet.css" rel="stylesheet">
      <link rel="stylesheet" href={% static 'personal/css/agency.min.css' %} type="text/css">
+  
+  <style type="text/css">
 
+  .col-org{
+    color: #ff8c60;
+}
+.light-col {
+    color: #9b9ea0;
+}
+#cont-form{
+ 
+  margin: 40px;
+
+}
+#banner-list{
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #6085b7;
+  opacity: 0.8;
+  background-color: ;
+  float: right;
+  margin-top:40px;
+  width: 75%;
+}
+#banner-list p{
+  color: white;
+  text-align: right;
+  padding-right: 10px;
+   padding-bottom: 40px;
+}
+#banner-list h4{
+    font-size: 18px;
+    text-align: right;
+    color: white;
+    line-height: 1.5;
+   
+
+}
+#banner{
+    background-image: url('{%static 'personal/img/khartoum.jpg'%}');
+    background-size: cover;
+    background-position: center;
+}
+.btn-style{
+    color: #fff;
+    background-color: #ff8c60;
+    border-color: #ff8c60;
+    width: 35%;
+}
+.form-style{
+  border: 2px solid #ff8c60;
+  border-radius: 5px;
+}
+.bg-org{
+  background-color: #ff8c60;
+}
+@media (max-width:700px){
+   #cont-form{
+    display: none;
+   }
+   #banner-list p {
+    color: white;
+    text-align: right;
+    padding-right: 10px;
+    padding-bottom: 2px;
+    font-size: 12px;
+  }
+  #banner-list h4{
+        font-size: 15px;
+        line-height: 1.2;
+  }
+  #banner-list {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #6085b7;
+    opacity: 0.8;
+    width: 95%;
+    height: 100%;
+    background-color: ;
+    margin-top: 3px;
+  }
+}
+
+  </style>
     {%endblock%}
         
 {%block content%}
@@ -16,6 +99,7 @@
 
 
  <!-- start slide-->
+ <!--
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner ">
     <div class="carousel-item active ">
@@ -45,27 +129,94 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-</div>
+</div> -->
     <!-- End of slider-->
 
+<!--start banner -->
+
+<section id="banner">
+  <div class="container">
+    <div class="row">
+<div class=" col-md-6 col-lg-4 pb-5" id="cont-form">
 
 
-<!-- #endregion Jssor Slider End -->
-<!-- #endregion Jssor Slider End -->
+                    <!--Form with header-->
 
-<!--start page title
-      <section id="page-title">
-          <div class="">
-                   <nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <a href="index.html" class="non-uper"><li class="breadcrumb-item active container" aria-current="page">Home /</li></a>
-  </ol>
-              </nav>
+                    <form action="mail.php"  method="post">
+                      <div class="form-style">
+                        <div class="card  ">
+                            <div class="card-header p-0">
+                                <div class="bg-org text-white text-center py-2">
+                                    <h3>تواصل معنا  <i class="fa fa-envelope"></i> </h3>
+                                    <p class="m-0 text-center">أخبرنا عن مطلباتك  وسوف نقدم لك  افضل العروض  </p>
+                                </div>
+                            </div>
+                            <div class="card-body p-3  float-right">
 
-          </div>
-      </section>
-      <br> -->
-<!--end page title  -->
+                                <!--Body-->
+                                <div class="form-group ">
+                                    <div class="input-group mb-2 right">
+                                        <div class="input-group-prepend">
+                                            
+                                        </div>
+                                        <input type="text" class="form-control float-right" style="direction: rtl;" id="nombre" name="nombre" placeholder="الإسم كامل  *" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                  
+                                        </div>
+                                        <input type="email" class="form-control" style="direction: rtl;" id="nombre" name="email" placeholder="رقم الهاتف " required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                  
+                                        </div>
+                                        <input type="email" class="form-control" style="direction: rtl;" id="nombre" name="email" placeholder="  البريد الإلكتروني  *" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            
+                                        </div>
+                                        <textarea class="form-control" style="direction: rtl;"  placeholder="أكتب رسالتك  *" required></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="text-center">
+                                    <input type="submit" value="إسال " class="btn btn-style  rounded">
+                                </div>
+                                <p class="light-col float-right">مهم جدا *</p>
+
+                        </div>
+                        </div>
+                    </form>
+                  </div>
+
+                    <!--Form with header-->
+                </div>
+
+   <div class="col-lg-7 col-md-6 ">
+   <div id="banner-list">
+       <h4>صفحات ذو تصميم جذاب وصديق للإستخدام  <i class="fas fa-palette col-org"></i>     </h4>
+     <p class="light-col">يجذب المستخدم للإطلاع على المحتوى</p>
+     <h4>إضافة خصائص للموقع لجعله أكثر فائدة   <i class="fas fa-shopping-cart col-org"></i> </h4>
+     <p>بيع المنتجات والخدمات على الإنترنت</p>
+     <h4>نستخدم  احدث أساليب التسويق الإلكتروني <i class="fas fa-users col-org"></i> </h4>
+     <p>للوصول لأكبر عدد من المستخدمين</p>
+    </div>
+      </div>
+
+  </div>
+
+  </div>
+</section>
+<!--end banner -->
  <!--start our services  -->
    <section id="our-services">
     <div class="container">

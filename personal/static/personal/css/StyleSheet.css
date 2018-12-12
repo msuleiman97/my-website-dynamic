@@ -1,9 +1,17 @@
+@import url(//fonts.googleapis.com/earlyaccess/notokufiarabic.css);
 body{
 
    top: 0px !important;
     overflow-y: visible;
     overflow-x: hidden;
     
+}
+p{
+font-family: 'Tajawal', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+   font-family: 'Noto Kufi Arabic', sans-serif;
+
 }
 .blue-col{
     background-color: #3786af;
@@ -36,7 +44,6 @@ body{
 }
 .to-uper{
     text-transform: uppercase;
-    font-family:sans-serif;
     font-style: normal;
     font-size: 18px;
 }
@@ -80,8 +87,9 @@ body{
 /* end top nav */
 /* navbar style */
 nav a{
-    color: #9b9ea0;
     font-size: 20px;
+    color: #2facb1;
+    font-family: 'Noto Kufi Arabic', sans-serif;
 }
 nav a:hover{
     color: #ff8c60;
@@ -89,9 +97,18 @@ nav a:hover{
 }
 .light-col {
     color: #9b9ea0;
+
+}
+.dropdown-item{
+    font-size: 20px;
+    color: #2facb1;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+
+
 }
 a.lhover {
     text-decoration: none;
+
 }
 
 a:hover.lhover { /* orang color hover */
@@ -112,16 +129,20 @@ a:hover.lhover { /* orang color hover */
 
 
 }
+p.our-ph{
+    font-size: 10px;
+}
+/*
 #top-footer p{
     font-family: 'Tajawal', sans-serif;
 }
 #top-footer h4{
-    font-family: 'Tajawal', sans-serif;
+    font-family:  sans-serif;
 }
 .tx-right h4,h5{
     text-align: right;
     font-family: 'Tajawal', sans-serif;
-}
+}*/
 .carousel{
     }
 /* end top footer */
@@ -158,8 +179,20 @@ a:hover.lhover { /* orang color hover */
 #footer{
    
     padding: 5px;
-    background-color: darkgray;
+    background-color: #b8bcbf;
     
+}
+#top-footer .imp-link ul{
+    list-style-type: none;
+}
+#top-footer .imp-link ul li{
+    text-align: right;
+    margin-bottom: 10px;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-size: 12px;
+    }
+#top-footer.imo-link ,h6{    
+     margin-bottom: 15px;
 }
 
 /*  ###  end about page ### */
@@ -241,7 +274,17 @@ caption-img{
     height: 100%;
     width: 100%;
 }
+    .imp-link{
+        margin-bottom: 10px;
+        width: 45%;
+        float: right;
+    }
 @media (max-width:576px){
+    .imp-link{
+        margin-bottom: 10px;
+        width: 45%;
+        float: right;
+    }
     .carousel-item {
     height: 240px;
     width: 100%;
@@ -271,7 +314,7 @@ caption-img{
   }
   .org-circle h1{
     font-weight: 1000;
-    margin-top: 60px;
+    margin-top: 40px;
     font-size: 55px;
 
   }
@@ -285,10 +328,9 @@ caption-img{
     color: #ff8c60;
 }
 .grey-p{
-    color: grey;
-    text-align: center;
-    text-align-last: ;
+    color: #6c757d !important;
+    text-align: justify;
+    text-align-last:right;
     padding: 10px;
-    font-size: 20px;
 }
 /* end home page style */

@@ -6,10 +6,45 @@
     <meta name="keywords" content="best website designer in sudan , best website designer in khartoum sudan , best website developer in khartoum sudan , best freelance website designer in khartoum sudan , best freelance website designer in kassala,responsive website designer in kassala , best responsive website developer in khartoum sudan , personal website designer in kassala , best website developer in khartoum sudan , professional website developer in khartoum sudan , best freelance professional websiten developer in kassala,bootstrap website template developer in khartoum sudan , best bootstrap website template developer in kassala, bootstrap responsive website freelance developer in khartoum , best bootstrap responsive bootstrap website freelance developer in kassala, latest website template designer in khartoum sudan , latest website template designer in kassala ,simple website template designer in khartoum sudan , simple website template designer in kassala, looking for freelance website developer in khartoum , looking for freelance website developer in kassala , freelance web designer and developer in khartoum sudan , freelance website developer in khartoum sudan , freelance website builder in khartoum sudan , freelance django developer in khartoum sudan , freelance django developer in kassala , python django freelance developer ,freelance django website developer in khartoum sudan , best freelance website django developer in  kassala,dynamic website developer in khartoum sudan,dynamic website developer in kassala.">
      <link href="../../static/personal/css/StyleSheet.css" rel="stylesheet">
      <link rel="stylesheet" href={% static 'personal/css/agency.min.css' %} type="text/css">
+     <link rel="stylesheet" type="text/css" href="{% static 'personal/css/animate.css' %}">
   
-  <style type="text/css">
+  <style type="text/css" >
+#our-services p{
+   width: 100%;
+   margin:5px auto;
+}
+#portfolio{
+  padding: 30px 1px;
+}
+#portfolio h4{
+  margin-top: -10px;
+  padding-bottom: 10px;
+}
+#portfolio h6{
+  padding-bottom: 10px;
+}
+.port-capt-col{
+  background-color: #fafafa !important;
+}
+#why-us{
 
-  .col-org{
+  padding: 30px 1px 30px 1px ;
+}
+#why-us p{
+   padding-top: 1px;
+   text-align: justify;
+   text-align-last: right;
+}
+#why-us img{
+  width: 100%;
+  border: 2px solid #ff8c60;
+  margin: 1px auto;
+  }
+
+#why-text{
+  padding-left: 30px;
+}
+.col-org{
     color: #ff8c60;
 }
 .light-col {
@@ -17,24 +52,26 @@
 }
 #cont-form{
  
-  margin: 40px;
+  margin-top: 60px;
 
 }
 #banner-list{
+  margin-right: -88px;
   padding: 20px;
   border-radius: 5px;
   background-color: #6085b7;
   opacity: 0.8;
   background-color: ;
   float: right;
-  margin-top:40px;
+  margin-top:168px;
   width: 75%;
 }
 #banner-list p{
   color: white;
   text-align: right;
+  margin-top: -10px;
   padding-right: 10px;
-   padding-bottom: 40px;
+   padding-bottom: 30px;
 }
 #banner-list h4{
     font-size: 18px;
@@ -62,9 +99,40 @@
 .bg-org{
   background-color: #ff8c60;
 }
+#why-us img{
+  width: 100%;
+ border: 2px solid #ff8c60;
+  }
+  #why-us h4{
+  padding-top: 10px;
+  text-align: right;
+  padding-bottom: 25px;
+      padding-right: 200px;
+}
+.our-card{
+  padding: 8px 20px 20px 20px;
+  margin: 10px;
+  background: #fafafa; 
+}
+#our-tech{
+  margin: 30px auto;
+}
+#our-tech img{
+  margin: auto 85px ;
+  width: 50px;
+  height: 50px;
+}
 @media (max-width:700px){
+  #our-tech img{
+  margin: auto 10px ;
+  width: 30px; 
+  height: 30px;
+}
    #cont-form{
     display: none;
+   }
+   #banner{
+        padding: 50px 0;
    }
    #banner-list p {
     color: white;
@@ -74,11 +142,13 @@
     font-size: 12px;
   }
   #banner-list h4{
-        font-size: 15px;
+        font-size: 13px;
         line-height: 1.2;
+        margin-bottom: 13px;
   }
   #banner-list {
-    padding: 20px;
+    margin-right: 10px;
+    padding: 35px 20px 20px 20px;
     border-radius: 5px;
     background-color: #6085b7;
     opacity: 0.8;
@@ -87,6 +157,37 @@
     background-color: ;
     margin-top: 3px;
   }
+  #why-us{
+
+  padding: 28px 1px;
+}
+
+#why-us p {
+    color: #6c757d !important;
+    text-align: justify;
+    text-align-last:right;
+}
+  #why-us h4{
+  padding-top: 10px;
+  text-align: center;
+  padding-bottom: 25px;
+padding-right: 1px;
+}
+#why-text{
+
+  padding-left: 10px;
+}
+.img-section{
+  border-radius: 50%;
+}
+#why-us img{
+  width: 100%;
+  border: 2px solid #ff8c60;
+  margin: 10% auto;
+  }
+  #portfolio .portfolio-item {
+    margin: 0 0 30px;
+}
 }
 
   </style>
@@ -137,17 +238,18 @@
 <section id="banner">
   <div class="container">
     <div class="row">
-<div class=" col-md-6 col-lg-4 pb-5" id="cont-form">
+
+<div class=" col-md-6 col-lg-4 pb-5 wow fadeInLeft" id="cont-form">
 
 
                     <!--Form with header-->
 
                     <form action="mail.php"  method="post">
-                      <div class="form-style">
+                      <div class="">
                         <div class="card  ">
                             <div class="card-header p-0">
                                 <div class="bg-org text-white text-center py-2">
-                                    <h3>تواصل معنا  <i class="fa fa-envelope"></i> </h3>
+                                    <h4>تواصل معنا  <i class="fa fa-envelope"></i> </h4>
                                     <p class="m-0 text-center">أخبرنا عن مطلباتك  وسوف نقدم لك  افضل العروض  </p>
                                 </div>
                             </div>
@@ -201,8 +303,8 @@
                     <!--Form with header-->
                 </div>
 
-   <div class="col-lg-7 col-md-6 ">
-   <div id="banner-list">
+   <div class="col-lg-7 col-md-6 wow fadeInRight " >
+   <div id="banner-list" >
        <h4>صفحات ذو تصميم جذاب وصديق للإستخدام  <i class="fas fa-palette col-org"></i>     </h4>
      <p class="light-col">يجذب المستخدم للإطلاع على المحتوى</p>
      <h4>إضافة خصائص للموقع لجعله أكثر فائدة   <i class="fas fa-shopping-cart col-org"></i> </h4>
@@ -220,69 +322,103 @@
  <!--start our services  -->
    <section id="our-services">
     <div class="container">
+      <br><br>
+      <center><h4 class="light-col"><span class="col-navyblue">الخدمات التى  </span>نقدمها </h4></center>
       <br>
-      <center><h4 class="col-navyblue"><span class="col-navyblue">الخدمات التى </span>نقدمها </h4></center>
+      <!--
       <div class="h-under">
         <center><hr class="col-navyblue" style="border-bottom: 3px solid ; width: 80px; "></center>
         <center> <i class="fas fa-award col-navyblue" style="    margin-top: -27px;
     padding: 2px;position: absolute;background-color: white;margin-right: auto;margin-left: -5px;"></i></center>
-      </div>
+      </div>-->
       <div class="row">
-      <div class="col-lg-4 col-xs-12">
+      <div class="col-lg-4 col-xs-12 wow fadeInLeft">
+        <div class="our-card">
         <div class="org-circle">
           <center><h1 class="col-white"><i class="fas fa-hand-holding-usd col-white" ></i></h1></center>
         </div>
         <center><a href="#" class="lhover"><h4 class="col-navyblue">تسويق إلكتروني</h4></a></center>
         <p class="grey-p">احصل على تصميم جميل وجزابب لمووقع حت ى تجزب عدد اكبر من العملاء لنشاطك التجاري هذه الخطوة الإلى للعمل على الويب </p>
+        </div>
       </div>
-      <div class="col-lg-4 col-xs-12">
+      <div class="col-lg-4 col-xs-12 wow fadeInLeft ">
+        <div class="our-card">
         <div class="org-circle">
           <center><h1><i class="fas fa-laptop col-white"></i></h1></center>
         </div>
         <center><a href="#" class="lhover"><h4 class="col-navyblue">تطوير مواقع </h4></a></center>
         <p class="grey-p">احصل على تصميم جميل وجزابب لمووقع حت ى تجزب عدد اكبر من العملاء لنشاطك التجاري هذه الخطوة الإلى للعمل على الويب </p>
       </div>
-      <div class="col-lg-4 col-xs-12">
+      </div>
+      <div class="col-lg-4 col-xs-12  wow fadeInLeft" >
+        <div class="our-card">
         <div class="org-circle">
           <center><h1><i class="fas fa-money-check col-white"></i></h1></center>
         </div>
          <center><a href="#" class="lhover"><h4 class="col-navyblue">تصميم صفحات </h4></a></center>
          <p class="grey-p">احصل على تصميم جميل وجزابب لمووقع حت ى تجزب عدد اكبر من العملاء لنشاطك التجاري هذه الخطوة الإلى للعمل على الويب </p>
+       </div>
       </div>
 
       </div>
 
     </div>
     <BR>
-   </section> -->
+   </section> 
    
   <!--end  our services  -->
- 
+  <hr class="light-col">
+<!--start why us -->
+<section id="why-us">
+  <div class="container">
+     <h4 class="col-navyblue">لماذا نحن الأفضل <span class="light-col">في  المجال ؟ </span></h4> 
+    <div class="row">
+
+      <div class="col-lg-4 col-md-6 col-xs-12 wow fadeInLeft img-section" >
+
+       <img src="{% static 'personal/img/our emplyee.jpg'%}" class="img-responsive img-circle">
+        
+      </div>
+      <div class="col-lg-8 col-md-6 col-xs-12 wow fadeInRight" id="why-text">
+         
+        <p class="light-col">خبرتنا الطويلة في تصميم وتطوير المواقع الإلكترونية تجعلن ا من الأفضل في هذا المجال في السودان  , حيث نقدم لك الجديد في تقنيات المواقع مما يساهم في توسيع قاعدة  عملائك على الإنترنت .  حيث نقدم لك الجديد في تقنيات المواقع مما يساهم في توسيع قاعدة  عملائك على ال .بفوتنا ننسى اهمية التسويق الإلكتروني في توسيع قاعدة المستخدمين   </p>
+        <p class="light-col">كم نحن سعداء عندما أبقتنا الأقدار إلى هذا اليوم لنبعث التهاني بمناسبة عيد الأضحى إلى أناس نحمل لهم في قلوبنا كلّ الحب والاحترام كلّ عام وأنت بخير.
+بعد أن تسبب تود في موت كلب الصياد المفضل، طارده الصياد وكلبه الآخر كوبر بشراسة، في خلفية مزدوجة من تغير العالم الإنساني بنظر تود، وتغير حياته العادية التي اعتاد عليها برفقة البشر، ما أن أصبح مضطرًا إلى الصيد من أجل الحصول على الطعام، والبحث عن أنثى والدفاع عن منطقة سلطته ضد الثعالب الأخرى. تجهز مانيكس لكتابة روايته، بأن عكف على دراسة الثعالب البرية والأليفة، ومجموعة واسعة من أساليب الصيد، والطرق التي تتعقب بها كلاب الصيد الثعالب، وذلك ليضفي الواقعية على الشخصيات التي ابتكرها. نالت الرواية جائزة ديوتن لكتب الحيوانات .ا بفوتنا ننسى اهمية التسويق الإلكتروني في توسيع قاعدة المستخدمين وا.لوصول لأكثر عدد مالمستخدمين  فوتنا ننسى اهمية التسويق الإلكتروني في توسيع </p>
+      </div>
+    
+    </div>
+  </div>
+</section>
+<!--end why us -->
+  <hr class="light-col"> 
    <!-- Portfolio Grid -->
-    <section class="bg-light" id="portfolio">
+    <section class="" id="portfolio">
       <div class="container">
+      
         <div class="row">
+
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase col-navyblue">Portfolio</h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <h4 class="section-heading text-uppercase light-col"><span class="col-navyblue">بعض </span>اعمالنا </h2>
+            <h6 class="section-subheading text-muted">.هنا بعض المشاريع التى أنجزناها </h6>
+            <br>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 col-sm-6 portfolio-item">
+          <div class="col-md-4 col-sm-6 portfolio-item wow fadeInDown">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
               <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
+                <div class="portfolio-hover-content ">
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
               <img class="img-fluid" src="{%static 'personal/img/001-slide.jpg'%}" alt="port1">
             </a>
-            <div class="portfolio-caption col-navyblue">
-              <h4>متجر الكتروني</h4>
-              <p class="text-muted">Illustration</p>
+            <div class="portfolio-caption col-navyblue port-capt-col">
+              <h6>متجر الكتروني</h6>
+              <!-- <p class="text-muted">تصميم مواقع</p> -->
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
+          <div class="col-md-4 col-sm-6 portfolio-item wow fadeInDown">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
@@ -291,12 +427,12 @@
               </div>
               <img class="img-fluid" src="{%static 'personal/img/001-slide.jpg'%}" alt="port2">
             </a>
-            <div class="portfolio-caption col-navyblue">
-              <h4>Explore</h4>
-              <p class="text-muted">Graphic Design</p>
+            <div class="portfolio-caption col-navyblue port-capt-col" >
+              <h6>أكتشف</h6>
+              <!-- <p class="text-muted">تصميم مواقع</p> -->
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
+          <div class="col-md-4 col-sm-6 portfolio-item wow fadeInDown">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
@@ -305,12 +441,12 @@
               </div>
               <img class="img-fluid" src="{%static 'personal/img/001-slide.jpg'%}" alt="port3">
             </a>
-            <div class="portfolio-caption col-navyblue">
-              <h4>Finish</h4>
-              <p class="text-muted">Identity</p>
+            <div class="portfolio-caption col-navyblue port-capt-col">
+              <h6>انتهى</h6>
+              <!-- <p class="text-muted">تصميم مواقع</p> -->
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
+          <div class="col-md-4 col-sm-6 portfolio-item wow fadeInDown">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
@@ -319,12 +455,12 @@
               </div>
               <img class="img-fluid" src="{%static 'personal/img/001-slide.jpg'%}" alt="port4">
             </a>
-            <div class="portfolio-caption col-navyblue">
-              <h4>Lines</h4>
-              <p class="text-muted">Branding</p>
+            <div class="portfolio-caption col-navyblue port-capt-col">
+              <h6>خطوط</h6>
+              <!-- <p class="text-muted">تصميم مواقع</p> -->
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
+          <div class="col-md-4 col-sm-6 portfolio-item wow fadeInDown">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
               <div class="portfolio-hover">
                 <div class="portfolio-hover-content">
@@ -333,31 +469,29 @@
               </div>
               <img class="img-fluid" src="{%static 'personal/img/001-slide.jpg'%}" alt="port5">
             </a>
-            <div class="portfolio-caption col-navyblue">
-              <h4>Southwest</h4>
-              <p class="text-muted">Website Design</p>
+            <div class="portfolio-caption col-navyblue port-capt-col">
+              <h6>جنوب غربي</h6>
+              <!-- <p class="text-muted">تصميم مواقع</p> -->
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
+          <div class="col-md-4 col-sm-6 portfolio-item wow fadeInDown">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
               <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
+                <div class="portfolio-hover-content ">
                   <i class="fas fa-plus fa-3x"></i>
                 </div>
               </div>
               <img class="img-fluid" src="{%static 'personal/img/001-slide.jpg'%}" alt="port5">
             </a>
-            <div class="portfolio-caption col-navyblue">
-              <h4>Window</h4>
-              <p class="text-muted">Photography</p>
+            <div class="portfolio-caption col-navyblue port-capt-col">
+              <h6>سطح المكتب</h6>
+              <!-- <p class="text-muted">تصميم مواقع</p> -->
             </div>
           </div>
         </div>
       </div>
     </section>
-
-
-
+  <hr class="light-col">
 
     <!-- START THE FEATURETTES -->
 <!--
@@ -465,7 +599,7 @@
   background: url(background.jpg);
 	  background-size:cover;
 
-}
+} 
 #testimonial4 .carousel-inner{
   width: 75%;
   margin: auto;
@@ -546,17 +680,18 @@
   bottom: 0;
   width: 550px;
   display: block;
-  margin: 30px auto;
+  margin: 35px auto 30px auto;
   text-align: center;
   position: relative;
 }
+/*
 .testimonial4_header h4{
   color: white;
   font-size: 30px;
   font-weight: 600;
   position: relative;
   letter-spacing: 1px;
-}
+}*/
 
 .testimonial4_slide{
   top: 0;
@@ -573,8 +708,8 @@
   top: 0;
   left: 0;
   right: 0;
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   margin: auto;
   border-radius: 50%;
   border: 2px solid #2facb1 ;
@@ -588,8 +723,8 @@
 
 .testimonial4_slide p {
   color: white;
-  font-size: 16px;
-  margin: 40px 0 20px 0;
+  font-size: 14px;
+  margin: 20px 0 20px 0;
 }
 
 .testimonial4_slide h4 {
@@ -669,13 +804,17 @@
 }
 
 </style>
-<section style="background-color: #212529;background-image: url(../static/personal/img/map-image.png);background-repeat: cover ;background-position: center;" >
+
+      <div class="testimonial4_header ">
+      <h4 style="text-transform: none; margin-top: 30px; " class="col-navyblue">ماذا قالوا  عن <span class="light-col">خدماتنا</span></h4> 
+    </div>
+
+<section  style="background-color: #212529;background-image: url(../static/personal/img/map-image.png);background-repeat: cover ;background-position: center;height: 250px; margin-bottom: 30px;" >
 <div class="container" >
+
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="2000" data-pause="hover">
-	<br> 
-    		<div class="testimonial4_header ">
-			<h4 style="text-transform: none; " class="col-white">أراء عملائنا</h4>
-		</div>
+
+
   <div class="carousel-inner " >
     <div class="carousel-item active">
 			<div class="item active">
@@ -684,11 +823,11 @@
 
                     <h5 style="align-content: left;color:white; margin-bottom: 7px;
                                font-size: 24px; float: left;margin-left: -20px; "><i class="fa fa-quote-left"  ></i></h5>
-					<p class="col-white">هذه واحدة من أفضل السشركات في هذا المجال .</p>
+					<p class="col-white">عمل ممتاز جدا سعدت  بإستلام موقعي الإلكتروني على  مستوى متميز </p>
 
                     <h5><i class="fa fa-quote-right" style="float: right; color: white;font-size: 24px; marging-bottom: 5px; margin-top: -15px;margin-right: -20px;"></i></h5>
                     <br>
-					<h6 style="margin-bottom: 10px; color:white; font-size: 15px;" >___  احمد صالح   ___ </h6>
+					<h6 style="margin-bottom: 10px; color:white; font-size: 13px;" >___  احمد صالح   ___ </h6>
 				</div>
 			</div>
     </div>
@@ -698,11 +837,11 @@
 					<img src="../../static/personal/img/f1.jpg" class="img-circle img-responsive" />
 
                     <h5 style="align-content: left;color: white; margin-bottom: 7px; font-size: 24px; float: left;margin-left: -20px;"><i class="fa fa-quote-left" ></i></h5>
-					<p class="col-white">ذه واحدة من أفضل السشركات في هذا المجال .</p>
+					<p class="col-white">ذه واحدة من أفضل السشركات في هذا المجال .فضل السشركات في هذا المجال .فضل السشركات في هذا المجال .</p>
 
                     <h5><i class="fa fa-quote-right" style="float: right;margin-right: -20px; color: white;font-size: 24px; marging-bottom: 5px; margin-top: -15px;"></i></h5>
                     <br>
-					<h6 style="margin-bottom: 10px; color: white; font-size: 15px;" >___ هارون  محمد   ___</h6>
+					<h6 style="margin-bottom: 10px; color: white; font-size: 13px;" >___ هارون  محمد   ___</h6>
 				</div>
 			</div>
     </div>
@@ -712,11 +851,11 @@
 					<img src="../../static/personal/img/f3.jpg" class="img-circle img-responsive" />
 
                     <h5 style="align-content: left;color: white; margin-bottom: 7px; font-size: 24px; float: left;margin-left: -20px;"><i class="fa fa-quote-left" ></i></h5>
-					<p class="col-white">ذه واحدة من أفضل السشركات في هذا المجال .</p>
+					<p class="col-white">ذه واحدة من أفضل السشركات في هذا المجال .فضل السشركات في هذا المجال .فضل السشركات</p>
 
                     <h5><i class="fa fa-quote-right" style="float: right;margin-right: -20px; color: white;font-size: 24px; marging-bottom: 5px; margin-top: -15px;"></i></h5>
                     <br>
-					<h6 style="margin-bottom: 10px; color: white; font-size: 15px;" > ___ ياسر داؤود   ___</h6>
+					<h6 style="margin-bottom: 10px; color: white; font-size: 13px;" > ___ ياسر داؤود   ___</h6>
 				</div>
 			</div>
     </div>
@@ -725,11 +864,19 @@
 <br><br>
 </div>
 </section>
-       <!-- start jassor thumbal slider-->
-
-<!-- #endregion Jssor Slider End -->
-<!-- #endregion Jssor Slider End -->
-
+<!-- end testmonial -->
+<section id="our-tech">
+  <div >
+    <center>
+    <img src="{% static 'personal/img/html.png'%}"  class="wow fadeInDown">
+    <img src="{% static 'personal/img/psd.png'%}" class="wow fadeInDown">
+    <img src="{% static 'personal/img/css.png'%}"  class="wow fadeInDown">
+    <img src="{% static 'personal/img/bootstrap.png'%}"  class="wow fadeInDown">
+    <img src="{% static 'personal/img/django.png'%}"  class="wow fadeInDown">
+    <img src="{% static 'personal/img/js.png'%}"  class="wow fadeInDown">
+    </center>
+  </div>
+</section>
 
 
 
@@ -946,7 +1093,12 @@
       </div>
     </div>
 
+<!--aos -->
 
+<script type="text/javascript" src="{% static 'personal/js/wow.min.js'%}"></script>
+<script type="text/javascript">
+   new WOW().init();
+</script>
 <!--end modal -->
 
         {% endblock %}

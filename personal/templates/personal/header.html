@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../../static/personal/css/stylesheet.css">
 
     <!-- google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Changa:300|Tajawal" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Markazi+Text|Tajawal" rel="stylesheet">
     <!-- fontawsome file link  -->
 
     <link href="../../static/personal/css/StyleSheet.css" rel="stylesheet">
@@ -23,6 +23,8 @@
     
     <!-- website tab icon -->
     <link rel="icon" href="{% static 'personal/img/icon-logo.png'%}">
+     <!--aos animation cdn -->
+    <link rel="stylesheet" type="text/css" href="{% static 'personal/css/animate.css' %}">
     </head>
   <body >
 
@@ -60,8 +62,8 @@
     <nav class="navbar navbar-expand-lg  bg-white black-col" id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger non-uper" href={% url "index" %}><img src="{% static "personal/img/logo60X100.png" %}" alt="logo"></a>
-        <button class="navbar-toggler navbar-toggler-right light-dark white-col" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
+        <button class="navbar-toggler navbar-toggler-right light-dark white-col bg-org" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          
           <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -110,44 +112,65 @@
    
 
     <div class="col-lg-4 col-md-12">
-    <center>
-    <h4>رؤيتنا</h4>
+     <center> <h6 >تواصل  <span style="color: #ff8c60; font-size: 14px;font-weight: bold ">معنا على </span></h6>
+
+      <br>
+   <h4><a href="https://www.facebook.com/mohwebdeveloper1/?modal=admin_todo_tour" target="blank"><i class="fab fa-facebook-f white-col"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://www.instagram.com/mohwebdeveloper/" target="blank"><i class="fab fa-instagram white-col"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://www.linkedin.com/in/%D9%85%D8%B7%D9%88%D8%B1-%D9%85%D9%88%D8%A7%D9%82%D8%B9-moh-webdeveloper-36173a175/" target="blank"><i class="fab fa-linkedin white-col"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="https://twitter.com/mohamedwebdeve1" target="blank" class="lhover"><i class="fab fa-twitter white-col"></i></a> &nbsp;&nbsp;&nbsp;&nbsp; </h4>
+     </center><br>
+     <br><br>
+    <!-- <center>
     
-    <p>ان نكون الافضل في مجالنا عن طريق تقديم احدث الالأدوات التقنية للعملاء . ن نكون الافضل في مجالنا عن طريق تقديم احدث الالأدوات التقنية للعملاء .ن نكون الافضل في مجالنا عن طريق تقديم احدث الالأدوات التقنية للعملاء .</p></center>
-    <br>
+      <img src="{% static 'personal/img/logo60X100.png'%}" style="background-color: white;"> 
+     
+    <h6 >رؤيتنا</h6>
+    
+    <p class="our-ph " style="color: white !important; font-size: 13px;">ان نكون الافضل في مجالنا عن طريق تقديم احدث الالأدوات التقنية للعملاء . ن نكون الافضل في مجالنا عن طريق تقديم احدث الالأدوات التقنية للعملاء .ن نكون الافضل في مجالنا عن طريق تقديم احدث الالأدوات التقنية للعملاء .</p>     </center> -->
+    
     </div>
     <br>
     <div class="col-lg-4 col-md-12">
-     <center> <h4>تابعنا </h4>
-
-      <br>
-   <h2><a href="https://www.facebook.com/mohwebdeveloper1/?modal=admin_todo_tour" target="blank"><i class="fab fa-facebook-f white-col"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="https://www.instagram.com/mohwebdeveloper/" target="blank"><i class="fab fa-instagram white-col"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="https://www.linkedin.com/in/%D9%85%D8%B7%D9%88%D8%B1-%D9%85%D9%88%D8%A7%D9%82%D8%B9-moh-webdeveloper-36173a175/" target="blank"><i class="fab fa-linkedin white-col"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="https://twitter.com/mohamedwebdeve1" target="blank" class="lhover"><i class="fab fa-twitter white-col"></i></a> &nbsp;&nbsp;&nbsp;&nbsp; </h2>
-     </center><br>
-     <br><br>
+    <div  class="imp-link">
+    <h6 class="float-right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;خدماتنا </h6>
+    
+    <ul>
+      <li><a class="lhover white-col" href={% url 'index' %}>تصميم صفحات</a></li>
+      <li><a class="lhover white-col" href={% url 'about' %}>تطوير مواقع</a></li>
+      <li><a class="lhover white-col" href={% url 'portfolio' %}>تسويق  الكتروني  </li>
+  
+      </ul> 
+      </div>
     </div>
 
     <div class="col-lg-4 col-md-12 ">
-    <div class="row">
-    <div class="col-lg-6 col-xs-6 tx-right">
+    <div  class="imp-link">
+    <h6 class="float-right">روابط مهمة</h6> 
+  
+    <ul>
+      <li><a class="lhover white-col" href="{% url 'index' %}" >الرئيسية</a></li>
+      <li><a class="lhover white-col" href="{% url 'about' %}">من نحن </a></li>
+      <li><a class="lhover white-col" href="{% url 'portfolio' %}">اعمالنا</a></li>
+      <li><a class="lhover white-col" href="{% url 'contact' %}">تواصل معنا</a></li>
+    </ul>  
+      </div>    
+
+ 
+
+      </div>
+
+
+      <!--
      <center> 
     
     <h5><a class="lhover white-col" href="#">تصميمم صفحات</a> </h5><br>
     <h5><a class="lhover white-col" href="#">تطوير مواقع</a></h5> <br>
-    <h5><a class="lhover white-col" href="#">تسويق إلكتروني</a></h5></center><br>
+    <h5><a class="lhover white-col" href="#">تسويق إلكتروني</a></h5></center><br> -->
     </div>
-    <div class="col-lg-6  col-xs-6 tx-right">
-  
-    
-    <h5><a class="lhover white-col" href={% url 'index' %}>الرئيسية</a></h5> <br>
-    <h5><a class="lhover white-col" href={% url 'about' %}>من نحن </a></h5> <br>
-    <h5><a class="lhover white-col" href={% url 'portfolio' %}>اعمالنا</a> </h5> <br>
-    <h5><a class="lhover white-col" href={% url 'contact' %}>تواصل معنا</a> </h5><br>
-      </div>
+
    </div>
-</div> 
+</div>  <!--end col -->
     </div>
   </div>   
 </section>
@@ -157,8 +180,8 @@
       <section id="footer">
           <div class="container">
         
-        <p class="float-right non-uper" style="color: #2facb1;"><a href="#" style="color: white;" class="non-uper"> <i class="fas fa-arrow-up" ></i>  Back to top</a></p>
-        <p style="text-indent: 0px; color: white;">&copy; 2018-2019 All Right are reserved</p>
+        <p class="float-right non-uper" style="color: #2facb1; margin-top: 2px;"><a href="#" style="color: white;" class="non-uper"> الى الأعلى <i class="fas fa-arrow-up" ></i> </a></p>
+        <p style="text-indent: 0px; color: white; margin-top: 10px; ">&copy; 2018-2019 All Right are reserved</p>
           </div>
       </section>
 <!--end  footer -->

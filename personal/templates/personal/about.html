@@ -1,121 +1,101 @@
 {%extends "personal/header.html"%}
+{%load staticfiles %}
 
     {%block title %}
-    <title>ABOUT US | Mohamed Web developer , best freelance web developer in Sudan</title>
+    <title>تصميم صفحات | تطوير مواقع | تسويق الكتروني</title>
     <meta name="description" content="The best freelance webdeveloper in kartoum sudan , website template design , responsive website design , dynamic website development.">
     <meta name="keywords" content="best website designer in sudan , best website designer in khartoum sudan , best website developer in khartoum sudan , best freelance website designer in khartoum sudan , best freelance website designer in kassala,responsive website designer in kassala , best responsive website developer in khartoum sudan , personal website designer in kassala , best website developer in khartoum sudan , professional website developer in khartoum sudan , best freelance professional websiten developer in kassala,bootstrap website template developer in khartoum sudan , best bootstrap website template developer in kassala, bootstrap responsive website freelance developer in khartoum , best bootstrap responsive bootstrap website freelance developer in kassala, latest website template designer in khartoum sudan , latest website template designer in kassala ,simple website template designer in khartoum sudan , simple website template designer in kassala, looking for freelance website developer in khartoum , looking for freelance website developer in kassala , freelance web designer and developer in khartoum sudan , freelance website developer in khartoum sudan , freelance website builder in khartoum sudan , freelance django developer in khartoum sudan , freelance django developer in kassala , python django freelance developer ,freelance django website developer in khartoum sudan , best freelance website django developer in  kassala,dynamic website developer in khartoum sudan,dynamic website developer in kassala.">
     {%endblock%}
         {%block content%}
-<!--start page title  -->
-<!--
-      <section id="page-title">
-          <div class="">
-                   <nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <a href="about.html" class="non-uper container"><li class="breadcrumb-item active container" aria-current="page">About /</li></a>
-  </ol>
-              </nav>  
-             
-          </div>
-      </section>
-      
---> 
-<!--end page title  --> 
-<!--start gif photo -->
-      <section id="gif-photo" style="">
-          <div >
-              <img src="../../static/personal/img/gif%20phot.gif" >
-          </div>
-      </section>
-<!-- end gif photo-->
-<!--start about txt -->
-<br>
-      <section id="about-txt">
-         <div class="container">
-            
-             <div class="row featurette">
-              <div class="col-md-7 ">
-              <h2 class="featurette-heading" style="margin-bottom: 2px; color:#2facb1;  ">Who We Are . </h2>
-              
-            <p class="lead" style="text-indent: 30px; text-align: justify;">Creative and Best is freelancer web company created by mohammed suleiman  , our company design and build websites based on the customer perfrence , Now days internet is taking big part of our life , that why we work and interact with our customers online .</p><p class="lead" style="text-indent: 30px; text-align: justify;">We build the most creative and interactive website that help you develop your bussiness and go online , We cocern in two main thing in builing website , first of all the interactife interface because it's give the visitor the first impression about the bussuiness or organzition , second part of building the website it to develop the features and make the website powerfull and usefull . 
-             
-              </p>
-            
-            </div>
-             <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto rounded" src="../../static/personal/img/why-us-img.jpg" alt="Generic placeholder image" style=" background-color:#2facb1; margin-top: 0 important!; ">
-              
-          </div>
-        </div>
-          
-         </div>
-      <br>
-      </section>
-<!--end about txt -->
-<!--start our mission , our goals -->
-      <section id="our-mission">
-          <br>
-        <div class="container"> 
-           <div class="row">
-    <div class="col">
-   <div class="card bg-navyblue col-white " style="padding-left: 0 !important; box-sizing: border-box:none;  text-align: center; margin-bottom: 5px; ">
-  <div class="card-header">
-    <h4 class="col-white" style="vertical-align: middle;">Our Goals </h4>
-  </div>
-  <div class="card-body" >
- 
-    <p class="card-text" style="text-align: center;">Our goals are all about helping our customers get bigger and bigger online and supporting them all the way , by then we could that we succssed , to achieve that we work very hard to create website that is uniqe and amazing for our customer , that will definitely help them spread their bussiness and activity online to the world .</p>
-    
-  </div>
-</div>
+<!--start banner -->
+<section class="section" id="ban-sect" style="    background-image: url('{%static 'personal/img/ban-bg.jpg'%}'); background-repeat: no-repeat;background-size: cover; width: 100%;">
+ <div class="container">
+  <div class="title wow fadeInRight">
+   <h4>من نحن  <i class="fas fa-user-tag"></i></h4>
+   <ul class="float-right ">
+     <li> أدواتنا  &nbsp;&nbsp; <span class="white-col">--</span></li>
+     <li>طريقتنا  &nbsp;&nbsp; <span class="white-col">--</span></li>
+     <li>أسعارنا   &nbsp;&nbsp; <span class="white-col">--</span></li>
+     <li>خبرتنا   </li>
+   </ul>
+ </div>
+ </div> 
   
-    </div>
-    <div class="col">
-   <div class="card bg-navyblue col-white " style="padding-left: 0 !important; box-sizing: border-box:none;  text-align: center; margin-bottom: 5px; ">
-  <div class="card-header">
-    <h4 class="col-white" style="vertical-align: middle;">Our pholsophy </h4>
-  </div>
-  <div class="card-body" >
- 
-    <p class="card-text" style="text-align: center;">Our philosphy is that our success is depending on  our customer success online ,  it's that simple but behined that there is big visoin and hard work to make it the right way .
-    we know that to achieve it , isn't possible but littel hard , we say it's hard because the web technology field is always updating .</p>
+</section>
+<!--end banner -->
+
+<!--start who we are -->
+<section class="section" id="who-we">
+  <div class="container">
+     <h4 class="col-navyblue">من  نحن<span class="light-col"> ؟</span></h4> 
+    <div class="row">
+
+
+      <div class="col-lg-8 col-md-6 col-xs-12 wow fadeInLeft left-col" >
+        <p class="light-col">خبرتنا الطويلة في تصميم وتطوير المواقع الإلكترونية تجعلن ا من الأفضل في هذا المجال في السودان  , حيث نقدم لك الجديد في تقنيات المواقع مما يساهم في توسيع قاعدة  عملائك على الإنترنت .  حيث نقدم لك الجديد في تقنيات المواقع مما يساهم في توسيع قاعدة  عملائك على ال .بفوتنا ننسى اهمية التسويق الإلكتروني في توسيع قاعدة المستخدمين   </p>
+        <p class="light-col">كم نحن سعداء عندما أبقتنا الأقدار إلى هذا اليوم لنبعث التهاني بمناسبة عيد الأضحى إلى أناس نحمل لهم في قلوبنا كلّ الحب والاحترام كلّ عام وأنت بخير.
+بعد أن تسبب تود في موت كلب الصياد المفضل، طارده الصياد وكلبه الآخر كوبر بشراسة، في خلفية مزدوجة من تغير العالم الإنساني بنظر تود، وتغير حياته العادية التي اعتاد عليها برفقة البشر، ما أن أصبح مضطرًا إلى الصيد من أجل الحصول على الطعام، والبحث عن أنثى والدفاع عن منطقة سلطته ضد الثعالب الأخرى. تجهز مانيكس لكتابة روايته، بأن عكف على دراسة الثعالب البرية والأليفة، ومجموعة واسعة من أساليب الصيد، والطرق التي تتعقب بها كلاب الصيد الثعالب، وذلك ليضفي الواقعية على الشخصيات التي ابتكرها. نالت الرواية جائزة ديوتن لكتب الحيوانات .ا بفوتنا ننسى اهمية التسويق الإلكتروني في توسيع قاعدة المستخدمين وا.لوصول لأكثر عدد مالمستخدمين  فوتنا ننسى اهمية التسويق الإلكتروني في توسيع </p>
+ </div>
+      <div class="col-lg-4 col-md-6 col-xs-12 wow fadeInRight right-col" >
+
+       <img src="{% static 'personal/img/our emplyee.jpg'%}" class="img-responsive img-circle">
+        
+      </div>   
+
+     
     
-  </div>
-</div>
-  
     </div>
   </div>
-    
-      </div> 
-          <br>
-      </section>
-      <br>
-<!--end our mission , our goals  -->
-<!--start our employee-->
-      <section>
-          <div class="container">
-            <div class="row">
-            <div class="col" >
-            <div class="card " style="width: 18rem; border: 2px solid #2facb1;">
-  <img class="card-img-top" src="../../static/personal/img/our%20emplyee.jpg" alt="Card image cap" style="padding: 5px;border: rounded;">
-  <div class="card-body">
-    <h5 class="card-title">CEO</h5>
-    <p class="card-text">Mohammed Suleiman ,</p>
-    <p class="card-text">the cof-ounder of the company , his big vision is the automote of the company .</p>
-    <a href="#" class="btn btn-primary non-uper">Get in touch with</a>
+</section>
+<!--end who we are -->
+<hr class="light-col">
+
+<!--start list -->
+<section class="section container" id="list">
+
+  <div class="row">
+    <div class="col-lg-6 order-lg-2  col-xs-12 ">
+      <div class="list-card wow fadeInUp">
+      <img src="{% static 'personal/img/our-way.png' %}">
+      <h4 class="col-navyblue">طريقة عملنا<span class="light-col"> </span></h4>
+      <p>تجهز مانيكس لكتابة روايته، بأن عكف على دراسة الثعالب البرية والأليفة، ومجموعة واسعة من أساليب الصيد، والطرق التي تتعقب بها كلاب الصيد الثعالب، وذلك ليضفي الواقعية على الشخصيات التي ابتكرها. نالت الرواية جائزة ديوتن لكتب الحيوانات .ا بفوتنا ننسى اهمية التسويق الإلكتروني في توسيع قاعدة المستخدمين وا.لوصول لأكثر عدد مالمستخدمين  فوتنا ننسى اهمية التسويق الإلكتروني في تو</p>
+      </div>
+    </div>
+    <div class="col-lg-6 order-lg-1 col-xs-12 ">
+      <div class="list-card wow fadeInUp">
+      <img src="{% static 'personal/img/our-tech.png' %}">
+      <h4 class="col-navyblue">الأدوات التى نستخدمها<span class="light-col"> </span></h4>
+      <p>تجهز مانيكس لكتابة روايته، بأن عكف على دراسة الثعالب البرية والأليفة، ومجموعة واسعة من أساليب الصيد، والطرق التي تتعقب بها كلاب الصيد الثعالب، وذلك ليضفي الواقعية على الشخصيات التي ابتكرها. نالت الرواية جائزة ديوتن لكتب الحيوانات .ا بفوتنا ننسى اهمية التسويق الإلكتروني في توسيع قاعدة المستخدمين وا.لوصول لأكثر عدد مالمستخدمين  فوتنا ننسى اهمية التسويق الإلكتروني في تو</p>
+    </div>
+    </div>
   </div>
-</div>
-                </div>
-            
-        <div class="col " style=" align-content: center; float: right; vertical-align: middle;">
-            <br><br> <br><br><br><br><br>
-              <i class="fas fa-plus" style="color:#2facb1; font-size: 50px; "></i>  
-             </div>
-                </div>
-          </div>
-          <br>
-      </section>
-      
-<!--end our employee -->
+  <div class="row">
+    <div class="col-lg-6 order-lg-2 col-xs-12">
+      <div class="list-card wow fadeInUp">
+      <img src="{% static 'personal/img/our-price.png' %}">
+      <h4 class="col-navyblue">أسعارنا <span class="light-col"> </span></h4>
+      <p>تجهز مانيكس لكتابة روايته، بأن عكف على دراسة الثعالب البرية والأليفة، ومجموعة واسعة من أساليب الصيد، والطرق التي تتعقب بها كلاب الصيد الثعالب، وذلك ليضفي الواقعية على الشخصيات التي ابتكرها. نالت الرواية جائزة ديوتن لكتب الحيوانات .ا بفوتنا ننسى اهمية التسويق الإلكتروني في توسيع قاعدة المستخدمين وا.لوصول لأكثر عدد مالمستخدمين  فوتنا ننسى اهمية التسويق الإلكتر</p>
+    </div>
+    </div>
+    <div class="col-lg-6 order-lg-1 col-xs-12">
+      <div class="list-card wow fadeInUp">
+      <img src="{% static 'personal/img/our-experince.png' %}">
+      <h4 class="col-navyblue">خبرتنا <span class="light-col"> </span></h4>
+      <p>تجهز مانيكس لكتابة روايته، بأن عكف على دراسة الثعالب البرية والأليفة، ومجموعة واسعة من أساليب الصيد، والطرق التي تتعقب بها كلاب الصيد الثعالب، وذلك ليضفي الواقعية على الشخصيات التي ابتكرها. نالت الرواية جائزة ديوتن لكتب الحيوانات .ا بفوتنا ننسى اهمية التسويق الإلكتروني في توسيع قاعدة المستخدمين وا.لوصول لأكثر عدد مالمستخدمين  فوتنا ننسى اهمية التسويق الإلكتروني في تو</p>
+    </div>
+    </div>
+  </div>
+  
+</section>
+<!--end list  -->
+<hr class="light-col">
+
+<!--start contact us -->
+<section class="section container" id="contact">
+ <div class="wow fadeInLeft"> 
+<h6 class="col-navyblue">انشر  نشاطك التجاري بالحصول على موقع الكتروني  جذاب ومميزة  </h6> <a class="" href="{% url 'contact' %}"><button type="button" class="btn btn-style rounded ">تواصل معنا </button> </a></div>
+</section> 
+<!--end contact us -->
+
         {% endblock %}
    

@@ -25,6 +25,7 @@
     <link rel="icon" href="{% static 'personal/img/icon-logo.png'%}">
      <!--aos animation cdn -->
     <link rel="stylesheet" type="text/css" href="{% static 'personal/css/animate.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'personal/css/animate.css' %}">
     </head>
   <body >
 
@@ -111,7 +112,7 @@
     <div class="row">
    
 
-    <div class="col-lg-4 col-md-12">
+    <div class="col-lg-4 col-xs-12 order-xs-3 ">
      <center> <h6 >تواصل  <span style="color: #ff8c60; font-size: 14px;font-weight: bold ">معنا على </span></h6>
 
       <br>
@@ -131,7 +132,7 @@
     
     </div>
     <br>
-    <div class="col-lg-4 col-md-12">
+    <div class="col-lg-4 col-xs-6  order-xs-2">
     <div  class="imp-link">
     <h6 class="float-right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;خدماتنا </h6>
     
@@ -144,7 +145,7 @@
       </div>
     </div>
 
-    <div class="col-lg-4 col-md-12 ">
+    <div class="col-lg-4 col-xs-6 order-xs-1">
     <div  class="imp-link">
     <h6 class="float-right">روابط مهمة</h6> 
   
@@ -190,6 +191,11 @@
 
 
     <script src="../../static/personal/js/bootstrap.min.js"></script>
+    <!--aos javascript -->
+    <script type="text/javascript" src="{% static 'personal/js/wow.min.js'%}"></script>
+<script type="text/javascript">
+   new WOW().init();
+</script>
 </body>
 
 

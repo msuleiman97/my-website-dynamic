@@ -6,6 +6,16 @@ body{
     overflow-x: hidden;
     
 }
+.col-org{
+    color: #ff8c60;
+}
+.bg-org{
+    background-color: #ff8c60;
+}
+.light-col {
+    color: #9b9ea0;
+}
+
 p{
 font-family: 'Tajawal', sans-serif;
 }
@@ -122,6 +132,7 @@ a:hover.lhover { /* orang color hover */
 
 /* navbar style */
 /* top footer */
+
 #top-footer{
     padding-top: 20px;
     color: white;
@@ -132,50 +143,7 @@ a:hover.lhover { /* orang color hover */
 p.our-ph{
     font-size: 10px;
 }
-/*
-#top-footer p{
-    font-family: 'Tajawal', sans-serif;
-}
-#top-footer h4{
-    font-family:  sans-serif;
-}
-.tx-right h4,h5{
-    text-align: right;
-    font-family: 'Tajawal', sans-serif;
-}*/
-.carousel{
-    }
-/* end top footer */
-/* start index style */
-.box{
-    margin:7px;
-    padding: 30px;
-    background-color: white;
-    border-radius: 5px;
-    border: 2px solid #2facb1 ;
-}
-/* end index style */
-/*  ### start about page  ### */
-#gif-photo img{
-    width: 100%;
-    height: 550px;
-    
-}
 
-
-
-#our-mission{
-    padding: 7px 5px 0px 0px;
-    
-    background-color: #e9ecef;
-}
-
-
-#page-title{
-
-   
-   
-}
 #footer{
    
     padding: 5px;
@@ -193,6 +161,156 @@ p.our-ph{
     }
 #top-footer.imo-link ,h6{    
      margin-bottom: 15px;
+}
+
+
+/* end top footer */
+/* start index style */
+.box{
+    margin:7px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 5px;
+    border: 2px solid #2facb1 ;
+}
+/* end index style */
+/*  ### start about page  ### */
+.section {
+   padding-top:  30px;
+    padding-bottom:  30px;
+}
+.section h4,h6{
+    margin-bottom:10px;
+}
+#ban-sect{
+    height: 250px;
+    width: 100%;
+}
+#ban-sect ul{
+    list-style-type: none;
+}
+
+.title ul li{
+    text-align: right !important;
+    color: #ff8c60;
+    display: inline;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-family:  'Tajawal', sans-serif;
+
+}
+
+#ban-sect h4{
+    padding-top: 120px;
+    color: white;
+    text-align: right;
+    margin-bottom: 20px;
+
+}
+#who-we h4{
+    text-align: center;
+
+}
+.left-col{
+    float: left;
+    padding: 10px;
+}
+.right-col{
+    float: right;
+    padding: 10px;
+}
+.left-col p{
+    text-align: justify;
+    text-align-last: right;
+}
+.right-col img{
+    width: 100%;
+    margin: 0 auto;
+}
+#list h4{
+  text-align: center;
+}
+#list img{
+  float: left;
+}
+#left p {
+    padding: 20px;
+    text-align: justify;
+    text-align-last: right;
+    width: 50%;
+   
+}
+.list-card{
+    margin-bottom: 30px;
+    background-color: #fafafa;
+    padding: 20px;
+}
+.list-card img{
+     padding-bottom: 100px;
+     padding-right: 15px;
+}
+.list-card p{
+    text-align: justify;
+    text-align-last: right;
+    color: #9b9ea0;
+}
+.contact-btn{
+    background-color: black !important;
+}
+.btn-style{
+    color: #fff;
+    background-color: #ff8c60;
+    border-color: #ff8c60;
+    margin-top:  -65px;
+    margin-left: 200px;
+    
+}
+#contact h6{
+  text-align: center;
+ 
+}
+@media (max-width:576px){
+    .btn-style{
+
+    margin-top:  20px;
+
+    margin-left: 110px;
+    text-align: center;
+    
+}
+    #ban-sect{
+    height: 200px;
+    width: 100%;
+}
+    #ban-sect ul{
+    list-style-type: none;
+}
+.title ul li{
+    text-align: right !important;
+    color: #ff8c60;
+    display: inline;
+    padding-left: 2px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    font-family:  'Tajawal', sans-serif;
+
+}
+
+#ban-sect h4{
+    padding-top: 80px;
+    color: white;
+    text-align: right;
+}
+.list-card{
+    margin-bottom: 30px;
+}
+.list-card img{
+     padding-bottom: 10px;
+     padding-right: 15px;
+}
+
+
 }
 
 /*  ###  end about page ### */
@@ -254,7 +372,7 @@ caption-img{
 
 }
 #banner{
-    background-image: url('{%static 'personal/img/download.jpg'%}');
+    background-image: url('{% static 'personal/img/download.jpg'%}');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

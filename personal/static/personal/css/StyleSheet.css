@@ -258,7 +258,7 @@ p.our-ph{
 .contact-btn{
     background-color: black !important;
 }
-.btn-style{
+.btn-style-cont{
     color: #fff;
     background-color: #ff8c60;
     border-color: #ff8c60;
@@ -271,7 +271,7 @@ p.our-ph{
  
 }
 @media (max-width:576px){
-    .btn-style{
+    .btn-style-cont{
 
     margin-top:  20px;
 
@@ -365,6 +365,7 @@ caption-img{
 /*  ###  end portfolio page ### */
 
 /* home page style */
+/* */
 .banner h4{
     text-align: right;
     color: white;
@@ -452,3 +453,16 @@ caption-img{
     padding: 10px;
 }
 /* end home page style */
+
+/* contact page */
+.btn-style{
+    color: #fff;
+    background-color: #ff8c60;
+    border-color: #ff8c60;
+    width: 35%;
+}
+#form-img img{
+     float: right;
+     /*margin-right: 200px;*/
+}
+/* end contact page */

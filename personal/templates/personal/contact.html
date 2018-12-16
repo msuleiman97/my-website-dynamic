@@ -1,132 +1,188 @@
 {% extends "personal/header.html" %}
-
+{%load staticfiles %}
     {%block title %}
-    <title>Contact | best freelance web developer in Sudan</title>
+    <title>مطور مواقع الكترونية  رقم هاتف بريد راسلنا </title>
     <meta name="description" content="The best freelance webdeveloper contact in sudan ,start building your website by contacting us , togther we can make the best website you love to have .">
     <meta name="keywords" content=" best website developer in khartoum sudan contact page, website template design  khartoum sudan contact number ,website template design in kassala contact number , responsive website design khartoum sudan  contact page, dynamic website development in khartoum sudan contact number,seo and website ranking in khartoum sudan contact page, hosting on the web services khartoum sudan contact number, hosting on the web services in kassala , logo designer in khartoum sudan contact number , website content developing in khartoum sudan  contact number , developing website features in khartoum sudan contact number ,best website designer in sudan contact number page , best website designer in khartoum sudan contact number , best website developer in khartoum sudan  contact number, best freelance website designer in khartoum sudan  contact number, best freelance website designer in kassala contact number,responsive website designer in kassala contact number, best responsive website developer in khartoum sudan contact number, personal website designer in kassala contact number, best website developer in khartoum sudan contact number, professional website developer in khartoum sudan contact number, best freelance professional website developer in kassala contact number,bootstrap website template developer in khartoum sudan contact number, best bootstrap website template developer in kassala contact number, bootstrap responsive website freelance developer in khartoum , best bootstrap responsive bootstrap website freelance developer in kassala email id, latest website template designer in khartoum sudan contact form , latest website template designer in kassala contact number,simple website template designer in khartoum sudan contact number , simple website template designer in kassala contact number, looking for freelance website developer in khartoum contact number, looking for freelance website developer in kassala contact number , freelance web designer and developer in khartoum sudan contact number, freelance website developer in khartoum sudan contact number, freelance website builder in khartoum sudan contact number , freelance django developer in khartoum  sudan contact page  , freelance django developer in kassala contact number , python django freelance developer contact page  ,freelance django website developer in khartoum sudan contact page , best freelance website django developer in  kassala contact number,dynamic website developer in khartoum sudan contact page,dynamic website developer in kassala contact number.">
+
+<style type="text/css">
+  #form-img img{
+   
+     margin-left: 1px;
+     padding-top: 80px;
+     padding-right: 80px;
+}
+#basic-inf h6{
+  text-align: right;
+  padding-bottom: 10px;
+}
+#we-best h6{
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+#we-best {
+  padding-top: 40px;
+}
+@media (max-width:576px){
+    #form-img img{
+      width: 100%;
+      padding-right: 1px;
+      margin-left: 15px;
+      padding-top: 10px;
+      padding-bottom: 30px;
+      }
+  
+}
+</style>
     {%endblock%}
         {%block content%}
-<!--start about txt -->
-<br>
+<!--start banner -->
+<section class="section" id="ban-sect" style="    background-image: url('{%static 'personal/img/ban-bg.jpg'%}'); background-repeat: no-repeat;background-size: cover; width: 100%;">
+ <div class="container">
+  <div class="title wow fadeInRight">
+   <h4>تواصل معنا  <i class="fas fa-user-tag"></i></h4>
+   <ul class="float-right ">
+     <li> هواتفنا  &nbsp;&nbsp; <span class="white-col">--</span></li>
+     <li>البريد  &nbsp;&nbsp; <span class="white-col">--</span></li>
+     <li>راسلنا   </span></li>
 
-      <section id="about-txt">
-          <br><br>
-         <div class="container">
+   </ul>
+ </div>
+ </div> 
+  
+</section>
+<!--end banner -->
 
-           <div class="jumbotron jumbotron-fluid">
-              <div class="container">
-                  <h1 class="display-4 col-navyblue">Start Building Your Website .</h1>
-                   <p class="lead">The first step in your online juarney is to contact us and we will hear from you , depending on your excpectation and requirements we build for you creative and suitable website .</p>
-              </div>
-            </div>
+<!--start we best -->
+<section class=" container" id="we-best">
 
-         </div>
-
-      </section>
-
-<!--end about txt -->
-
-<!--start contact us form -->
-
-      <section id="our-mission">
-          <br>
-        <div class="container">
-
-            <div class="row">
-
-                <div class="col-lg-8 col-lg-offset-2">
-
-                    <h1 class="col-navyblue">Get in touch .</h1>
-
-                    <p class="lead">Feel free to message us and describe a littel about your vision and your bussiness . </p>
-
-
-                    <form id="contact-form" method="post" action="." role="form">
-                        {% csrf_token %}
-                           {{ form.as_p }}
-                        <div class="messages"></div>
-
-                        <div class="controls">
-
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="form_name">Firstname *</label>
-                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="form_lastname">Lastname *</label>
-                                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="form_email">Email *</label>
-                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="form_phone">Phone</label>
-                                        <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label for="form_message">Message *</label>
-                                        <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <input type="submit" class="btn btn-success btn-send " value="Send message">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <p class="text-muted"><strong>*</strong> These fields are required . </p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </form>
-
-                </div><!-- /.8 -->
-
-            </div> <!-- /.row-->
-
-        </div>
-          <br>
-      </section>
-
-<!--end contact us form -->
-      <div id="icon-bet">
-      <center><h2><img src="../../static/personal/img/telphone.gif" width="90px" height="90px" style=" " ></h2> </center>
-
+  <div class="row">
+   
+    <div class="col-lg-4 order-lg-3 col-xs-12 wow fadeInUp">
+      <div class="list-card">
+        <h6 class="col-navyblue"> <i class="fas fa-palette col-org"></i>&nbsp;&nbsp;تصميم جميل </h6>
+        <p>ي قلوبنا كلّ الحب والاحترام كلّ عام وأنت بخير.
+بعد أن تسبب تود في موت كلب الصياد المفضل، طارده الصياد وكلبه الآخر كوبر بشراسة، في خلفية مزدوجة من تغير العالم ا</p>
       </div>
-<!--start template2-->
-      <section>
-          <br>
-        <div class="container">
-            <div id="contact">
-                <h2 class="col-navyblue" > Contact Information .</h2> <br>
+    </div>
+        <div class="col-lg-4 order-lg-2 col-xs-12 wow fadeInUp">
+      <div class="list-card">
+        <h6 class="col-navyblue"><i class="fas fa-shopping-cart col-org"></i>&nbsp;&nbsp;خصائص متميزة </h6>
+        <p>ي قلوبنا كلّ الحب والاحترام كلّ عام وأنت بخير.
+بعد أن تسبب تود في موت كلب الصياد المفضل، طارده الصياد وكلبه الآخر كوبر بشراسة، في خلفية مزدوجة من تغير العالم ا</p>
+      </div>
+    </div>
+        <div class="col-lg-4 order-lg-1 col-xs-12 wow fadeInUp">
+      <div class="list-card">
+        <h6 class="col-navyblue"><i class="fas fa-users col-org"></i>&nbsp;&nbsp;تسويق الكتروني</h6>
+        <p>ي قلوبنا كلّ الحب والاحترام كلّ عام وأنت بخير.
+بعد أن تسبب تود في موت كلب الصياد المفضل، طارده الصياد وكلبه الآخر كوبر بشراسة، في خلفية مزدوجة من تغير العالم ا</p>
+      </div>
+    </div>
 
-            <h6 style="color: darkgray;"><i class="fas fa-envelope col-navyblue" ></i> &nbsp;&nbsp; phone :  +91 958 152 2956</h6> <br>
-            <h6 style="color: darkgray;"><i class="fas fa-phone col-navyblue"></i>&nbsp;&nbsp;  e-mail :  m.suleiman@gmail.com</h6><br>
-            <h6 style="color: darkgray;"><i class="fas fa-map-marked col-navyblue"></i>&nbsp;&nbsp;location :  hyderabad , india</h6><br>
-            </div>
-        </div>
-      </section>
-      <br>
-<!--end our services -->
+  </div>
+  
+
+</section>
+<!--end  we best  -->
+
+<hr class="light-col">
+<!--start form -->
+<section  class="section container" id="form">
+  <div class="row">
+    <div class="col-lg-8  col-xs-12 order-lg-2 " id="form-img">
+      <img src="{% static 'personal/img/contact-us.png'%}">
+    </div>
+    <div class=" col-md-6 col-lg-4 pb-5 order-lg-1 wow fadeInLeft " id="cont-form">
+
+
+                    <!--Form with header-->
+
+                    <form action="mail.php"  method="post">
+                      <div class="">
+                        <div class="card  ">
+                            <div class="card-header p-0">
+                                <div class="bg-org text-white text-center py-2">
+                                    <h4>تواصل معنا  <i class="fa fa-envelope"></i> </h4>
+                                    <p class="m-0 text-center">أخبرنا عن مطلباتك  وسوف نقدم لك  افضل العروض  </p>
+                                </div>
+                            </div>
+                            <div class="card-body p-3  float-right">
+
+                                <!--Body-->
+                                <div class="form-group ">
+                                    <div class="input-group mb-2 right">
+                                        <div class="input-group-prepend">
+                                            
+                                        </div>
+                                        <input type="text" class="form-control float-right" style="direction: rtl;" id="nombre" name="nombre" placeholder="الإسم كامل  *" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                  
+                                        </div>
+                                        <input type="email" class="form-control" style="direction: rtl;" id="nombre" name="email" placeholder="رقم الهاتف " required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                  
+                                        </div>
+                                        <input type="email" class="form-control" style="direction: rtl;" id="nombre" name="email" placeholder="  البريد الإلكتروني  *" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <div class="input-group-prepend">
+                                            
+                                        </div>
+                                        <textarea class="form-control" style="direction: rtl;"  placeholder="أكتب رسالتك  *" required></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="text-center">
+                                    <input type="submit" value="إسال " class="btn btn-style  rounded">
+                                </div>
+                                <p class="light-col float-right">مهم جدا *</p>
+
+                        </div>
+                        </div>
+                    </form>
+                  </div>
+
+                    <!--Form with header-->
+                </div>
+
+  </div>
+</section>
+<!--end form-->
+
+<hr class="light-col">
+
+<!--start basic info -->
+<section class="section container" id="basic-inf">
+  <div class="row">
+    <div class="col-lg-6 order-lg-2 col-xs-12 wow fadeInUp">
+      <div class="list-card">
+        <h6 class="col-navyblue">رقم الهاتف   &nbsp;<i class="fas fa-mobile-alt"></i></h6>
+        <p>+91 958 1522 956</p>
+      </div>
+    </div>
+        <div class="col-lg-6 order-lg-1 col-xs-12 wow fadeInUp">
+      <div class="list-card">
+        <h6 class="col-navyblue">البريد الإلكتروني  &nbsp;<i class="far fa-envelope"></i></h6>
+        <p>mohwebdeveloper@gmail.com</p>
+      </div>
+    </div>
+
+  </div>
+  
+
+</section>
+<!--end  basic info -->
         {%endblock%}

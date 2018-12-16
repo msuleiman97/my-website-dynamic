@@ -19,8 +19,8 @@ def dynamic_website(request):
 def digital_marketing(request):
     return render(request,'personal/digital-marketing.html')
 
-def portfolio(request):
-    return render(request,'personal/portfolio.html')
+def blog(request):
+    return render(request,'personal/blog.html')
 
 def contact(request):
     form=ContactForm(request.POST or None)

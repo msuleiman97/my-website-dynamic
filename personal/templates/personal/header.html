@@ -69,14 +69,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
-            <li class="nav-item ">
-              <a class="nav-link js-scroll-trigger" href={% url 'contact' %}>تواصل معنا</a>
+            <li class="nav-item order-lg-5">
+              <a class="nav-link  js-scroll-trigger" href={% url "index" %}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;الرئيسية  </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href={% url "portfolio" %}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;اعمالنا</a>
+            <li class="nav-item order-lg-4">
+              <a class="nav-link js-scroll-trigger" href={% url "about" %}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;من نحن </a>
             </li>
-            <li class="nav-item">
-      <li class="nav-item dropdown">
+      <li class="nav-item order-lg-4">
+      <li class="nav-item dropdown order-lg-3">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           خدماتنا
         </a>
@@ -87,13 +87,22 @@
         </div>
       </li>
               
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href={% url "about" %}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;من نحن </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link  js-scroll-trigger" href={% url "index" %}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;الرئيسية  </a>
-            </li>
+    </li>
+
+          <li class="nav-item order-lg-2 ">
+              <a class="nav-link js-scroll-trigger" href={% url 'contact' %}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;تواصل معنا</a>
+          </li>
+
+          <li class="nav-item order-lg-1">
+              <a class="nav-link js-scroll-trigger" href={% url "blog" %}>المنتدى</a>
+          </li>
+
+
+
+
+
+
+
           </ul>
         </div>
       </div>
@@ -133,7 +142,7 @@
     <ul>
       <li><a class="lhover white-col" href="{% url 'index' %}" >الرئيسية</a></li>
       <li><a class="lhover white-col" href="{% url 'about' %}">من نحن </a></li>
-      <li><a class="lhover white-col" href="{% url 'portfolio' %}">اعمالنا</a></li>
+      <li><a class="lhover white-col" href="{% url 'blog' %}">المنتدى</a></li>
       <li><a class="lhover white-col" href="{% url 'contact' %}">تواصل معنا</a></li>
     </ul>  
       </div>    

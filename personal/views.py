@@ -11,8 +11,14 @@ def about(request):
     return render(request,'personal/about.html')
 
 
-def services(request):
-    return render(request,'personal/services.html')
+def website_template(request):
+    return render(request,'personal/website-template.html')
+
+def dynamic_website(request):
+    return render(request,'personal/dynamic-website.html')
+def digital_marketing(request):
+    return render(request,'personal/digital-marketing.html')
+
 def portfolio(request):
     return render(request,'personal/portfolio.html')
 

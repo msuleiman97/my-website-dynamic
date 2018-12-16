@@ -23,6 +23,8 @@ urlpatterns = [
     url(r'^$',views.index, name='index'),
     url(r'^about/$',views.about, name='about'),
     url(r'^contact/$',views.contact, name='contact'),
-    url(r'^services/$',views.services, name='services'),  
+    url(r'^website-template/$',views.website_template, name='website-template'),
+    url(r'^dynamic-website/$',views.dynamic_website, name='dynamic-website'), 
+    url(r'^digital-marketing/$',views.digital_marketing, name='digital-marketing'), 
     url(r'^portfolio/$',views.portfolio, name='portfolio'),
 ]

@@ -9,6 +9,21 @@
      <link rel="stylesheet" type="text/css" href="{% static 'personal/css/animate.css' %}">
   
   <style type="text/css" >
+.col-right h6{
+  text-align: right;
+}
+.col-right ul{
+    text-align: right;
+    list-style-type: none;
+}
+.col-right  ul li{        
+    padding-right: 15px;
+    color: #9b9ea0;
+    text-align: right;
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-family: 'Tajawal', sans-serif;
+}
 #our-services p{
    width: 100%;
    margin:5px auto;
@@ -42,7 +57,13 @@
   }
 
 #why-text{
-  padding-left: 30px;
+  padding-top: 20px;
+  padding-right: 80px;
+}
+#why-text h6{
+  text-align: justify;
+  text-align-last: right;
+  line-height: 25px;
 }
 .col-org{
     color: #ff8c60;
@@ -174,8 +195,9 @@
 padding-right: 1px;
 }
 #why-text{
-
-  padding-left: 10px;
+  padding-top: 15px;
+  padding-right: 30px;
+}
 }
 .img-section{
   border-radius: 50%;
@@ -183,7 +205,7 @@ padding-right: 1px;
 #why-us img{
   width: 100%;
   border: 2px solid #ff8c60;
-  margin: 10% auto;
+  /*margin: 10% auto;*/
   }
   #portfolio .portfolio-item {
     margin: 0 0 30px;
@@ -369,21 +391,34 @@ padding-right: 1px;
   <!--end  our services  -->
   <hr class="light-col">
 <!--start why us -->
-<section id="why-us">
+<section class="section" id="why-us">
   <div class="container">
      <h4 class="col-navyblue">لماذا نحن الأفضل <span class="light-col">في  المجال ؟ </span></h4> 
     <div class="row">
 
-      <div class="col-lg-4 col-md-6 col-xs-12 wow fadeInLeft img-section" >
+      <div class="col-lg-4 col-md-6 col-xs-12 wow fadeInLeft img-section left-col" >
 
        <img src="{% static 'personal/img/our emplyee.jpg'%}" class="img-responsive img-circle">
         
       </div>
-      <div class="col-lg-8 col-md-6 col-xs-12 wow fadeInRight" id="why-text">
+      <div class="col-lg-8 col-md-6 col-xs-12 wow fadeInRight col-right" id="why-text">
          
-        <p class="light-col">خبرتنا الطويلة في تصميم وتطوير المواقع الإلكترونية تجعلن ا من الأفضل في هذا المجال في السودان  , حيث نقدم لك الجديد في تقنيات المواقع مما يساهم في توسيع قاعدة  عملائك على الإنترنت .  حيث نقدم لك الجديد في تقنيات المواقع مما يساهم في توسيع قاعدة  عملائك على ال .بفوتنا ننسى اهمية التسويق الإلكتروني في توسيع قاعدة المستخدمين   </p>
+         <h6 class="light-col">ببرتنا الطويلة في تصميم وتطوير المواقع الإلكترونية تجعلن ا من الأفضل في هذا المجال في السودان  , حيث نقدم لك الجديد في تقنيات المواقع مما يساهم  </h6>
+        <ul>
+          <li>تصميم بسيط  &nbsp;<i class="far fa-check-circle col-org"></i></li>
+          <li>صديق للإستخدام  &nbsp;<i class="far fa-check-circle col-org"></i></li>
+          <li>جميل المظهر &nbsp; <i class="far fa-check-circle col-org"></i></li>
+        </ul> 
+                 <h6 class="light-col">أبرتنا الطويلة في تصميم وتطوير المواقع الإلكترونية تجعلن ا من الأفضل في هذا المجال في السودان  , حيث نقدم لك الجديد في تقنيات المواقع مما يساهم </h6>
+        <ul>
+          <li>تصميم بسيط  &nbsp;<i class="far fa-check-circle col-org"></i></li>
+          <li>صديق للإستخدام  &nbsp;<i class="far fa-check-circle col-org"></i></li>
+          <li>جميل المظهر &nbsp; <i class="far fa-check-circle col-org"></i></li>
+        </ul>
+
+      <!--  <p class="light-col">خبرتنا الطويلة في تصميم وتطوير المواقع الإلكترونية تجعلن ا من الأفضل في هذا المجال في السودان  , حيث نقدم لك الجديد في تقنيات المواقع مما يساهم في توسيع قاعدة  عملائك على الإنترنت .  حيث نقدم لك الجديد في تقنيات المواقع مما يساهم في توسيع قاعدة  عملائك على ال .بفوتنا ننسى اهمية التسويق الإلكتروني في توسيع قاعدة المستخدمين   </p>
         <p class="light-col">كم نحن سعداء عندما أبقتنا الأقدار إلى هذا اليوم لنبعث التهاني بمناسبة عيد الأضحى إلى أناس نحمل لهم في قلوبنا كلّ الحب والاحترام كلّ عام وأنت بخير.
-بعد أن تسبب تود في موت كلب الصياد المفضل، طارده الصياد وكلبه الآخر كوبر بشراسة، في خلفية مزدوجة من تغير العالم الإنساني بنظر تود، وتغير حياته العادية التي اعتاد عليها برفقة البشر، ما أن أصبح مضطرًا إلى الصيد من أجل الحصول على الطعام، والبحث عن أنثى والدفاع عن منطقة سلطته ضد الثعالب الأخرى. تجهز مانيكس لكتابة روايته، بأن عكف على دراسة الثعالب البرية والأليفة، ومجموعة واسعة من أساليب الصيد، والطرق التي تتعقب بها كلاب الصيد الثعالب، وذلك ليضفي الواقعية على الشخصيات التي ابتكرها. نالت الرواية جائزة ديوتن لكتب الحيوانات .ا بفوتنا ننسى اهمية التسويق الإلكتروني في توسيع قاعدة المستخدمين وا.لوصول لأكثر عدد مالمستخدمين  فوتنا ننسى اهمية التسويق الإلكتروني في توسيع </p>
+بعد أن تسبب تود في موت كلب الصياد المفضل، طارده الصياد وكلبه الآخر كوبر بشراسة، في خلفية مزدوجة من تغير العالم الإنساني بنظر تود، وتغير حياته العادية التي اعتاد عليها برفقة البشر، ما أن أصبح مضطرًا إلى الصيد من أجل الحصول على الطعام، والبحث عن أنثى والدفاع عن منطقة سلطته ضد الثعالب الأخرى. تجهز مانيكس لكتابة روايته، بأن عكف على دراسة الثعالب البرية والأليفة، ومجموعة واسعة من أساليب الصيد، والطرق التي تتعقب بها كلاب الصيد الثعالب، وذلك ليضفي الواقعية على الشخصيات التي ابتكرها. نالت الرواية جائزة ديوتن لكتب الحيوانات .ا بفوتنا ننسى اهمية التسويق الإلكتروني في توسيع قاعدة المستخدمين وا.لوصول لأكثر عدد مالمستخدمين  فوتنا ننسى اهمية التسويق الإلكتروني في توسيع </p> -->
       </div>
     
     </div>

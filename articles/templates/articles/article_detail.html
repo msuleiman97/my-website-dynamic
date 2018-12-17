@@ -1,0 +1,150 @@
+{% extends 'personal/header.html' %}
+{% block title%}
+<title>{{ article.title }}</title>
+
+<style type="text/css">
+.post h6{
+  text-align: right;
+}
+.post img{
+
+  float: right;
+  padding-right: 20px;
+}
+.post p{
+  text-align: justify;
+  text-align-last: right;
+}
+.post-date{
+  text-align: right;
+  padding-top: 20px;
+}
+.img-div{
+  width: 400px;
+  height: 250px;
+  margin: 15px auto;
+  margin-right: -20px;
+ }
+  .img-div img{
+    width: 100%;
+    height: 100%;
+ }
+@media (max-width:576px){
+.post {
+  text-align: right;
+}
+.post img{
+  float: right;
+  padding-right: 0px;
+}
+.post p{
+	width: 285px;
+  text-align: justify;
+  text-align-last: right;
+  padding-right: 0px;
+}
+.post-date{
+  padding-top: 5px;
+  text-align: left;
+}
+#side-bar{
+  display: none;
+ }
+ .img-div{
+  width: 250px;
+  height: 250px;
+  margin: 15px auto;
+  margin-right: -20px;
+ }
+  .img-div img{
+    width: 100%;
+    height: 100%;
+ }
+ .post h6{
+  text-align: right;
+  padding-right: -30px;
+}
+.post img{
+  float: right;
+  padding-right: 1px;
+}
+.container{
+	width: auto;
+ }
+}
+</style>
+{%endblock%}
+{% block content %}
+<hr class="light-col">
+ 
+ <div class="row container section">
+
+ <div class="list-group col-lg-3" style="padding-left: 10px;">
+   <div id="side-bar" > 
+    <a href="" class="list-group-item active" style="text-align: center;font-family: 'Noto Kufi Arabic', sans-serif;
+"> <span >أقرا ايضا </span></a>
+    <a href="#" class="list-group-item lhover" style="text-align: right;font-family: 'Tajawal', sans-serif;"><span style="text-align: right;">أهمية المواقع </span></a>
+    <a href="#" class="list-group-item lhover" style="text-align: right;font-family: 'Tajawal', sans-serif;"><span >أنواع المواقع </span></a>
+    <a href="#" class="list-group-item lhover" style="text-align: right;font-family: 'Tajawal', sans-serif;"><span >طريقة تصميم </span></a>
+    <a href="#" class="list-group-item lhover"style="text-align: right;font-family: 'Tajawal', sans-serif;"><span >وكالة سفر </span></a>
+    <a href="#" class="list-group-item lhover"style="text-align: right;font-family: 'Tajawal', sans-serif;"><span >متجر الكتروني</span></a>
+
+</div>
+  </div>
+
+  <div class="col-lg-8 col-12 post">
+   
+      <h6 class="col-navyblue">{{ article.title }}</h6>
+    
+    <div class="row ">
+    <div class="col-lg-12  col-12 img-card">   
+       
+         <div class="img-div">
+       <img src="{{ article.thumb.url }}" class="img-responsive img-circle">
+          </div>
+    </div>
+      <div class="col-lg-12 col-12 post-card">
+       
+        <p class="light-col">{{ article.body }}  </p>
+        <p class="light-col post-date">{{ article.date }}</p>
+
+    </div>
+
+  </div> <!-- -->
+<hr class="light-col">
+
+
+
+    
+  </div>
+</div>
+ 
+<!-- end blog -->
+
+<!--end list  -->
+
+
+<!--start contact us -->
+<section class="section container" id="contact">
+ <div class="wow fadeInLeft"> 
+<h6 class="col-navyblue">انشر  نشاطك التجاري بالحصول على موقع الكتروني  جذاب ومميزة  </h6> <a class="" href="{% url 'contact' %}"><button type="button" class="btn btn-style-cont rounded ">تواصل معنا </button> </a></div>
+</section> 
+
+{% endblock %}
+
+
+<section class="section">
+
+
+<div class="article-detail">
+    <div class="article">
+        <img src="{{ article.thumb.url }}" />
+        <h2>{{ article.title }}</h2>
+        
+        <p>{{ article.body }}</p>
+        <p>{{ article.date }}</p>
+        <h3>Written by {{ article.author.username }}</h3>
+    </div>
+</div>
+
+</section>

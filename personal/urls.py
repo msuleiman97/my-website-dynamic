@@ -26,5 +26,4 @@ urlpatterns = [
     url(r'^website-template/$',views.website_template, name='website-template'),
     url(r'^dynamic-website/$',views.dynamic_website, name='dynamic-website'), 
     url(r'^digital-marketing/$',views.digital_marketing, name='digital-marketing'), 
-    url(r'^blog/$',views.blog, name='blog'),
 ]

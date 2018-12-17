@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'articles',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -138,5 +139,14 @@ STATIC_ROOT='/home/msuleiman1997/my-website-dynamic/static'
 #ACCOUNT_EMAIL_SUBJECT_PREFIX='Recived new message from your website'
 #EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
 
+ALLOW_UNICODE_SLUGS = True
 
+STATIC_URL = '/static/'
 
+STATICFILES_DIRS=(
+ os.path.join(BASE_DIR, 'static'),
+
+)
+
+MEDIA_URL='/media/'
+MEDIA_ROOT=os.path.join(BASE_DIR,'media')

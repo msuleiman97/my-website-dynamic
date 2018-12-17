@@ -1,0 +1,45 @@
+{% extends 'personal/header.html' %}
+{%block title%}
+<title>انشاء منشور </title>
+
+<style >
+	#id_title {
+		display: block;
+		padding: 10px auto;
+		direction: rtl;
+
+	}
+		#id_slug{
+		display: block ;
+		padding: 10px auto;
+		direction: rtl;
+	}
+		#id_body {
+		display: block;
+		padding: 10px auto;
+		direction: rtl;
+	}
+		#id_thumb {
+			display: block;
+		
+		padding: 10px auto;
+		direction: rtl;
+	}
+</style>
+{%endblock%}
+{% block content %}
+<section class="container">
+	<div class="section">
+
+    <div class="create-article">
+        <h4 class="col-navyblue float-right">أنشاء منشور جديد</h4>
+        <form class="site-form" action="{% url 'articles:create' %}" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" value="Create">
+        </form>
+    </div>
+</div> <!-- row -->
+    </section>
+
+{% endblock %}

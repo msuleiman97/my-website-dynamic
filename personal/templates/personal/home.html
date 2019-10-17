@@ -51,7 +51,8 @@
   padding-bottom: 10px;
 }
 .port-capt-col{
-  background-color: #fafafa !important;
+      opacity: 0.8;
+    background-color: #8ab4ec !important;
 }
 #why-us{
 
@@ -205,6 +206,7 @@
   text-align: center;
   padding-bottom: 25px;
 padding-right: 1px;
+font-size: 20px;
 }
 #why-text{
   padding-top: 15px;
@@ -357,7 +359,7 @@ padding-right: 1px;
    <section id="our-services">
     <div class="container">
       <br><br>
-      <center><h4 class="light-col"><span class="col-navyblue">الخدمات التى  </span>نقدمها </h4></center>
+      <center><h4>الخدمات التى  نقدمها </h4></center>
       <br>
       <!--
       <div class="h-under">
@@ -369,28 +371,28 @@ padding-right: 1px;
       <div class="col-lg-4 col-xs-12 wow fadeInLeft">
         <div class="our-card">
         <div class="org-circle">
-          <center><h1 class="col-white"><i class="fas fa-hand-holding-usd col-white" ></i></h1></center>
+          <h1 class="col-white"><i class="fas fa-hand-holding-usd " ></i></h1>
         </div>
-        <center><a href="{% url 'digital-marketing'%}" class="lhover"><h6 class="col-navyblue">تسويق إلكتروني</h6></a></center>
-        <p class="grey-p">نستخدم أحدث أدوات التسويق الإلكتروني لتسويق موقعك , مثل محركات البحث , مواقع التواصل الإجتماعي .للوصول لأكبر عدد من المستخدمين</p>
+        <center><a href="{% url 'digital-marketing'%}" ><h6 >تسويق إلكتروني</h6></a></center>
+        <p >نستخدم أحدث أدوات التسويق الإلكتروني لتسويق موقعك , مثل محركات البحث , مواقع التواصل الإجتماعي .للوصول لأكبر عدد من المستخدمين</p>
         </div>
       </div>
       <div class="col-lg-4 col-xs-12 wow fadeInLeft ">
         <div class="our-card">
         <div class="org-circle">
-          <center><h1><i class="fas fa-laptop col-white"></i></h1></center>
+          <h1><i class="fas fa-laptop "></i></h1>
         </div>
-        <center><a href="{% url 'dynamic-website'%}" class="lhover"><h6 class="col-navyblue">برمجة مواقع</h6></a></center>
-        <p class="grey-p"> إضافة ميزات جميلة للموقع لجعله أكثر فائدة للزوار  وجعله اكثر عمليا  ، مثل إنشاء حساب ,  طلب الخدمات التى يقدمها الموقع  واكثر</p>
+        <center><a href="{% url 'dynamic-website'%}" ><h6 >برمجة مواقع</h6></a></center>
+        <p > إضافة ميزات جميلة للموقع لجعله أكثر فائدة للزوار  وجعله اكثر عمليا  ، مثل إنشاء حساب ,  طلب الخدمات التى يقدمها الموقع  واكثر</p>
       </div>
       </div>
       <div class="col-lg-4 col-xs-12  wow fadeInLeft" >
         <div class="our-card">
         <div class="org-circle">
-          <center><h1><i class="fas fa-money-check col-white"></i></h1></center>
+        <h1><i class="fas fa-money-check "></i></h1>
         </div>
-         <center><a href="{% url 'website-template'%}" class="lhover"><h6 class="col-navyblue">تصميم صفحات </h6></a></center>
-         <p class="grey-p"> نصمم صفحات بسيطة الشكل  وجذابة  المظهر في أن واحد  , مما يجذب إنتباه المستخدمين لقرأة  محتوى الموقع وطلب الخدمات المتوفرة</p>
+         <center><a href="{% url 'website-template'%}" ><h6>تصميم صفحات </h6></a></center>
+         <p > نصمم صفحات بسيطة الشكل  وجذابة  المظهر في أن واحد  , مما يجذب إنتباه المستخدمين لقرأة  محتوى الموقع وطلب الخدمات المتوفرة  </p>
        </div>
       </div>
 
@@ -405,7 +407,7 @@ padding-right: 1px;
 <!--start why us -->
 <section class="section" id="why-us">
   <div class="container">
-     <h4 class="col-navyblue">لماذا نحن الأفضل <span class="light-col">في  المجال ؟ </span></h4> 
+     <h4 class="col-org">لماذا نحن الأفضل في  المجال ؟ </h4> 
     <div class="row">
 
       <div class="col-lg-4 col-md-6 col-xs-12 wow fadeInLeft img-section left-col" >
@@ -445,7 +447,7 @@ padding-right: 1px;
         <div class="row">
 
           <div class="col-lg-12 text-center">
-            <h4 class="section-heading text-uppercase light-col"><span class="col-navyblue">بعض </span>اعمالنا </h2>
+            <h4 class="section-heading text-uppercase col-org">المواقع التى طورناها</h2>
             <h6 class="section-subheading text-muted">.هنا بعض المشاريع التى أنجزناها </h6>
             <br>
           </div>
@@ -461,7 +463,7 @@ padding-right: 1px;
               <img class="img-fluid" src="{%static 'personal/img/portf1s.png'%}" alt="port1" style="    height: 240px;
 ">
             </a>
-            <div class="portfolio-caption col-navyblue port-capt-col">
+            <div class="portfolio-caption col-white port-capt-col">
               <h6>موقع شخصي</h6>
               <!-- <p class="text-muted">تصميم مواقع</p> -->
             </div>
@@ -475,7 +477,7 @@ padding-right: 1px;
               </div>
               <img class="img-fluid" src="{%static 'personal/img/portf2s.jpg'%}" alt="port2" style="    height: 240px; width: 100%;">
             </a>
-            <div class="portfolio-caption col-navyblue port-capt-col" >
+            <div class="portfolio-caption col-white port-capt-col" >
               <h6>وكالة سلوى </h6>
               <!-- <p class="text-muted">تصميم مواقع</p> -->
             </div>
@@ -489,7 +491,7 @@ padding-right: 1px;
               </div>
               <img class="img-fluid" src="{%static 'personal/img/portf3s.jpg'%}" alt="port3" style="    height: 240px; ">
             </a>
-            <div class="portfolio-caption col-navyblue port-capt-col">
+            <div class="portfolio-caption col-white port-capt-col">
               <h6>موقع تواصل إجتماعي</h6>
               <!-- <p class="text-muted">تصميم مواقع</p> -->
             </div>
@@ -503,7 +505,7 @@ padding-right: 1px;
               </div>
               <img class="img-fluid" src="{%static 'personal/img/portf4s.jpg'%}" alt="port4" style="    height: 240px; width: 100%;">
             </a>
-            <div class="portfolio-caption col-navyblue port-capt-col">
+            <div class="portfolio-caption col-white port-capt-col">
               <h6>موقع شركة</h6>
               <!-- <p class="text-muted">تصميم مواقع</p> -->
             </div>
@@ -517,7 +519,7 @@ padding-right: 1px;
               </div>
               <img class="img-fluid" src="{%static 'personal/img/portf5s.jpg'%}" alt="port5" style="    height: 240px; width: 100%;">
             </a>
-            <div class="portfolio-caption col-navyblue port-capt-col">
+            <div class="portfolio-caption col-white port-capt-col">
               <h6>مكتب أبومازن</h6>
               <!-- <p class="text-muted">تصميم مواقع</p> -->
             </div>
@@ -531,7 +533,7 @@ padding-right: 1px;
               </div>
               <img class="img-fluid" src="{%static 'personal/img/portf6s.jpg'%}" alt="port6" style="    height: 240px; width: 100%;">
             </a>
-            <div class="portfolio-caption col-navyblue port-capt-col">
+            <div class="portfolio-caption col-white port-capt-col">
               <h6>منتدي </h6>
               <!-- <p class="text-muted">تصميم مواقع</p> -->
             </div>
@@ -854,7 +856,7 @@ padding-right: 1px;
 </style>
 
       <div class="testimonial4_header ">
-      <h4 style="text-transform: none; margin-top: 30px; " class="col-navyblue">ماذا قالوا  عن <span class="light-col">خدماتنا</span></h4> 
+      <h4 style="text-transform: none; margin-top: 30px; " class="col-org">ماذا قالوا  عن خدماتنا</span></h4> 
     </div>
 
 <section  style="background-color: #535558;background-image: url(../static/personal/img/map-image.png);background-repeat: cover ;background-position: center;height: 250px; margin-bottom: 30px;" >

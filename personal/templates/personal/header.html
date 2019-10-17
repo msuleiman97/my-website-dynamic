@@ -12,13 +12,11 @@
     <meta charset="utf-8" >
     <link rel="stylesheet" href={% static 'personal/css/bootstrap.min.css' %} type="text/css">
     <link rel="stylesheet" href="{% static 'personal/css/stylesheet.css' %}" type="text/css">
-    <link rel="stylesheet" href="../../static/personal/css/stylesheet.css">
 
     <!-- google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Markazi+Text|Tajawal" rel="stylesheet">
     <!-- fontawsome file link  -->
 
-    <link href="../../static/personal/css/StyleSheet.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     
     <!-- website tab icon -->
@@ -33,24 +31,24 @@
 
 <!--top nav -->
 <section id="top-nav" >
-<div class="top-nav-cont">
+<div >
   <div class="row">
-    <div class="col-sm white-col">
 
+    <div class="col-sm ">
      <center><i class="far fa-envelope"></i>  &nbsp;&nbsp;mohwebdeveloper@gmail.com  </center>  
-  
     </div>
-    <div class="col-sm phone-top ">
 
-     <center><i class="fas fa-phone-volume">&nbsp;&nbsp;+919581522956</i></center>
-</div>
-    <div class="col-sm white-col float-right socal-top">
-   <center> <a href="https://www.facebook.com/mohwebdeveloper1/?modal=admin_todo_tour" target="blank"><i class="fab fa-facebook-f white-col"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="https://www.instagram.com/mohwebdeveloper/" target="blank"><i class="fab fa-instagram white-col"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="https://www.linkedin.com/in/%D9%85%D8%B7%D9%88%D8%B1-%D9%85%D9%88%D8%A7%D9%82%D8%B9-moh-webdeveloper-36173a175/" target="blank"><i class="fab fa-linkedin white-col"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="https://twitter.com/mohamedwebdeve1" target="blank"><i class="fab fa-twitter white-col"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;</center>
- 
+    <div class="col-sm  ">
+     <center><i class="fas fa-phone-volume">&nbsp;&nbsp;+974-31577088</i></center>
     </div>
+
+    <div class="col-sm ">
+     <center> <a href="https://www.facebook.com/mohwebdeveloper1/?modal=admin_todo_tour" target="blank"><i class="fab fa-facebook-f white-col"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
+     <a href="https://www.instagram.com/mohwebdeveloper/" target="blank"><i class="fab fa-instagram white-col"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
+     <a href="https://www.linkedin.com/in/%D9%85%D8%B7%D9%88%D8%B1-%D9%85%D9%88%D8%A7%D9%82%D8%B9-moh-webdeveloper-36173a175/" target="blank"><i class="fab fa-linkedin white-col"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
+     <a href="https://twitter.com/mohamedwebdeve1" target="blank"><i class="fab fa-twitter white-col"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;</center>
+    </div>
+
   </div>
 </div>
 
@@ -60,7 +58,7 @@
 <!--end top nav -->
 
 <!--nav -->
-    <nav class="navbar navbar-expand-lg  bg-white black-col" id="mainNav">
+    <nav class="navbar navbar-expand-lg " id="mainNav">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger non-uper" href={% url "index" %}><img src="{% static "personal/img/logo60X100.png" %}" alt="logo"></a>
         <button class="navbar-toggler navbar-toggler-right light-dark white-col bg-org" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -115,14 +113,14 @@
         {%endblock%}
     
 <!-- top footer-->
-<section class="blue-col white-col" id="top-footer">
+<section class="" id="top-footer">
   <div class="container">
     <br>
     <div class="row">
    
 
     <div class="col-lg-4 col-xs-12 order-lg-1 ">
-     <center> <h6 >تواصل  <span style="color: #ff8c60; font-size: 14px;font-weight: bold ">معنا على </span></h6>
+     <center> <h6 >تواصل  معنا على </span></h6>
 
       <br>
    <h4><a href="https://www.facebook.com/mohwebdeveloper1/?modal=admin_todo_tour" target="blank"><i class="fab fa-facebook-f white-col"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -137,28 +135,28 @@
     <br>
         <div class="col-lg-4 col-xs-6 order-lg-3">
     <div  class="imp-link">
-    <h6 class="float-right">روابط مهمة</h6> 
+    
   
-    <ul>
-      <li><a class="lhover white-col" href="{% url 'index' %}" >الرئيسية</a></li>
-      <li><a class="lhover white-col" href="{% url 'about' %}">من نحن </a></li>
-      <li><a class="lhover white-col" href="{% url 'articles:blog' %}">المنتدى</a></li>
-      <li><a class="lhover white-col" href="{% url 'contact' %}">تواصل معنا</a></li>
-    </ul>  
+     <ul >
+      <li><a  href="{% url 'index' %}" >الرئيسية</a></li>
+      <li><a  href="{% url 'about' %}">من نحن </a></li>
+      <li><a  href="{% url 'articles:blog' %}">المنتدى</a></li>
+      <li><a  href="{% url 'contact' %}">تواصل معنا</a></li>
+     </ul>  
       </div>    
 
  
 
-      </div>
+     </div>
 
     <div class="col-lg-4 col-xs-6  order-lg-2">
     <div  class="imp-link">
-    <h6 class="float-right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;روابط خدماتنا </h6>
+    
     
     <ul>
-      <li><a class="lhover white-col" href={% url 'website-template' %}>تصميم صفحات</a></li>
-      <li><a class="lhover white-col" href={% url 'dynamic-website' %}>برمجة  مواقع</a></li>
-      <li><a class="lhover white-col" href={% url 'digital-marketing' %}>تسويق  الكتروني  </li>
+      <li><a class="" href={% url 'website-template' %}>تصميم صفحات</a></li>
+      <li><a class="" href={% url 'dynamic-website' %}>برمجة  مواقع</a></li>
+      <li><a class="" href={% url 'digital-marketing' %}>تسويق  الكتروني  </li>
   
       </ul> 
       </div>
@@ -185,8 +183,8 @@
       <section id="footer">
           <div class="container">
         
-        <p class="float-right non-uper" style="color: #2facb1; margin-top: 2px;"><a href="#" style="color: white;" class="non-uper"> الى الأعلى <i class="fas fa-arrow-up" ></i> </a></p>
-        <p style="text-indent: 0px; color: white; margin-top: 10px; ">&copy; 2018-2019 كل الحقوق محفوظة</p>
+        <p class="float-right non-uper" style="color: #2facb1; margin-top: 2px;font-weight: bold;"><a href="#" style="color: white;" class="non-uper"> الى الأعلى <i class="fas fa-arrow-up" ></i> </a></p>
+        <p style="text-indent: 0px; color: white; margin-top: 9px; ">&copy; 2018-2019 كل الحقوق محفوظة</p>
           </div>
       </section>
 <!--end  footer -->

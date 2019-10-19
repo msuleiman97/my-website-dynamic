@@ -5,20 +5,22 @@
     {%block title %}
 
     {%endblock%}
-    
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {%load staticfiles %}
     <meta charset="utf-8" >
     <link rel="stylesheet" href={% static 'personal/css/bootstrap.min.css' %} type="text/css">
     <link rel="stylesheet" href="{% static 'personal/css/stylesheet.css' %}" type="text/css">
+    <link rel="stylesheet" href="../../static/personal/css/stylesheet.css">
 
     <!-- google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Markazi+Text|Tajawal" rel="stylesheet">
     <!-- fontawsome file link  -->
 
+    <link href="../../static/personal/css/StyleSheet.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    
+
     <!-- website tab icon -->
     <link rel="icon" href="{% static 'personal/img/icon-logo.png'%}">
      <!--aos animation cdn -->
@@ -35,7 +37,7 @@
   <div class="row">
 
     <div class="col-sm ">
-     <center><i class="far fa-envelope"></i>  &nbsp;&nbsp;mohwebdeveloper@gmail.com  </center>  
+     <center><i class="far fa-envelope"></i>  &nbsp;&nbsp;mohwebdeveloper@gmail.com  </center>
     </div>
 
     <div class="col-sm  ">
@@ -52,7 +54,7 @@
   </div>
 </div>
 
-    
+
 </section>
 
 <!--end top nav -->
@@ -62,7 +64,7 @@
       <div class="container">
         <a class="navbar-brand js-scroll-trigger non-uper" href={% url "index" %}><img src="{% static "personal/img/logo60X100.png" %}" alt="logo"></a>
         <button class="navbar-toggler navbar-toggler-right light-dark white-col bg-org" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          
+
           <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -84,7 +86,7 @@
          <center><a class="dropdown-item light-col lhover" href="{% url 'digital-marketing'%}">تسويق إلكتروني</a></center>
         </div>
       </li>
-              
+
     </li>
 
           <li class="nav-item order-lg-2 ">
@@ -106,18 +108,18 @@
       </div>
     </nav>
 
-    
+
 <!-- end nav -->
 
         {%block content%}
         {%endblock%}
-    
+
 <!-- top footer-->
 <section class="" id="top-footer">
   <div class="container">
     <br>
     <div class="row">
-   
+
 
     <div class="col-lg-4 col-xs-12 order-lg-1 ">
      <center> <h6 >تواصل  معنا على </span></h6>
@@ -129,44 +131,44 @@
     <a href="https://twitter.com/mohamedwebdeve1" target="blank" class="lhover"><i class="fab fa-twitter white-col"></i></a> &nbsp;&nbsp;&nbsp;&nbsp; </h4>
      </center><br>
      <br><br>
-   
-    
+
+
     </div>
     <br>
         <div class="col-lg-4 col-xs-6 order-lg-3">
     <div  class="imp-link">
-    
-  
+
+
      <ul >
       <li><a  href="{% url 'index' %}" >الرئيسية</a></li>
       <li><a  href="{% url 'about' %}">من نحن </a></li>
       <li><a  href="{% url 'articles:blog' %}">المنتدى</a></li>
       <li><a  href="{% url 'contact' %}">تواصل معنا</a></li>
-     </ul>  
-      </div>    
+     </ul>
+      </div>
 
- 
+
 
      </div>
 
     <div class="col-lg-4 col-xs-6  order-lg-2">
     <div  class="imp-link">
-    
-    
+
+
     <ul>
       <li><a class="" href={% url 'website-template' %}>تصميم صفحات</a></li>
       <li><a class="" href={% url 'dynamic-website' %}>برمجة  مواقع</a></li>
       <li><a class="" href={% url 'digital-marketing' %}>تسويق  الكتروني  </li>
-  
-      </ul> 
+
+      </ul>
       </div>
     </div>
 
 
 
       <!--
-     <center> 
-    
+     <center>
+
     <h5><a class="lhover white-col" href="#">تصميمم صفحات</a> </h5><br>
     <h5><a class="lhover white-col" href="#">تطوير مواقع</a></h5> <br>
     <h5><a class="lhover white-col" href="#">تسويق إلكتروني</a></h5></center><br> -->
@@ -175,14 +177,14 @@
    </div>
 </div>  <!--end col -->
     </div>
-  </div>   
+  </div>
 </section>
 <!-- end top footer-->
 <!--start footer -->
 
       <section id="footer">
           <div class="container">
-        
+
         <p class="float-right non-uper" style="color: #2facb1; margin-top: 2px;font-weight: bold;"><a href="#" style="color: white;" class="non-uper"> الى الأعلى <i class="fas fa-arrow-up" ></i> </a></p>
         <p style="text-indent: 0px; color: white; margin-top: 9px; ">&copy; 2018-2019 كل الحقوق محفوظة</p>
           </div>

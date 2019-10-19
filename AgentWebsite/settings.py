@@ -25,7 +25,7 @@ SECRET_KEY = 'dngk9_^hb+f^4+x-a3=!8#s790mdi@s8$@fpj2ytm@fa4hr1_!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
-ALLOWED_HOSTS = ['www.mohwebdeveloper.com']
+ALLOWED_HOSTS = ['msuleiman1997.pythonanywhere.com']
 
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'm.suleiman1997@gmail.com'
@@ -125,9 +125,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
-STATIC_URL = '/static/'
+#STATIC_URL = '/static/'
 
-STATIC_ROOT='/home/msuleiman1997/my-website-dynamic/static'
+#STATIC_ROOT='/home/msuleiman1997/my-website-dynamic/static'
 #sendgrid settings
 #SEND_GRID_API_KEY='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'
 #EMAIL_HOST='smtp.sendgrid.net'

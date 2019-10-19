@@ -6,6 +6,9 @@ body{
      overflow-x: hidden;
 
 }
+p{
+   color: gray !important;
+}
     .bg-navyblue{
     background: #2facb1 !important;
 }
@@ -54,21 +57,36 @@ a:hover {
     height: 550px;
 
 }
+#who-we p{
+    text-align: justify;
+    text-align-last: right;
+    text-indent-right:20px;
+}
+#who-we img{
+    border:2px solid #ff8c60;
+}
+#list p{
+   text-align-last: right;
+   text-align: justify;
 
-
-
-#our-mission{
-    padding: 7px 5px 0px 0px;
-
-    background-color: #e9ecef;
 }
 
-
-#page-title{
-
-
-
+.list-card {
+  width: 95%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+ 
 }
+.list-card img{
+    float: right;
+    padding: 30px 10px 30px 30px ;
+}
+.list-card h4{
+    text-align: center;
+    padding: 5px 0;
+    color: #ff8c60 !important;
+}
+
 
 /*  ###  end about page ### */
 
@@ -80,7 +98,6 @@ a:hover {
     right: 0 ;
 
 }
-
 
 
 .img-caption{
@@ -238,7 +255,7 @@ a.our-card h6{
     background-color: #8ab4ec !important;
 }
 .our-card p{
- color: white;
+ color: white !important;
  text-align: justify;
  text-align-last: right;
 }
@@ -247,6 +264,31 @@ a.our-card h6{
    color: white;
 }
 
+/* contact nav style */
+#contact-div{
+    max-width: 100% !important;
+    height:50px !important;
+}
+
+#contact h6{
+    float: right;
+    color:#ff8c60 !important;
+   text-align: right;
+   margin-top: 5px;
+   margin-left: 15px;
+  
+}
+#contact button{
+
+    float: right;
+    align-self: right;
+    background-color: #ff8c60 !important;
+    color: white;
+
+}
+.text-center {
+    color: white !important;
+}
 /* end home style */
 
 /* start portfolio */
@@ -277,3 +319,72 @@ a.our-card h6{
 }
 
 /* end portfolio */
+
+/* start contact page style */
+.list-card i{
+   color: #2facb1 !important;
+}
+.card-body {
+    border: 1px solid #ff8c60;
+
+}
+#basic-inf{
+    height: 50px;
+    max-width: 100%;
+    padding-right: 15px;
+}
+.phone-no h6{
+    color:#ff8c60 !important;
+    float:right !important;
+    padding-left: 20px; 
+}
+.phone-no p{
+    color:gray !important;
+    float:right !important; 
+}
+.email-id h6{
+    color:#ff8c60 !important;
+    float:right !important;
+    padding-left: 20px; 
+}
+.email-id p{
+    color:gray !important;
+    float:right !important; 
+}
+
+
+.card-header:first-child {
+    background-color: #ff8c60;
+}
+@media only screen and (max-width: 500px) {
+
+#basic-inf{
+    padding-right: 10px;
+    height: 100px;
+    max-width: 100%;
+}
+#contact-div {
+    max-width: 100% !important;
+    height: 60px !important;
+}
+#contact h6 {
+    float: right;
+  font-size: 10px;
+  font-weight: bold;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+#contact button {
+    float: right;
+    margin-top: 4px;
+    padding:3px;
+}
+}
+#web-type img {
+    border: 1px solid #ff8c60;
+}
+#web-type h6{
+    margin-top: 7px !important ;
+}
+
+/* end contact page style  */

@@ -10,6 +10,13 @@
   padding: 10px;
 
 }
+#side-bar a{
+  color: #8ab4ec;
+  text-decoration: none;
+}
+#side-bar a:hover{
+  color: #8ab4ec !important;
+}
 .img-card img{
   padding-left: px;
   width: 200px;
@@ -69,7 +76,19 @@
 }
 
 }
+.article-title h6{
+  color:#ff8c60 !important;
+  text-decoration: none;
+}
 
+.article-title a{
+  color:#ff8c60 !important;
+
+}
+.article-title a:hover{
+  color: #ff8c60 !important;
+  text-decoration: none;
+}
 
 </style>
     {%endblock%}
@@ -97,13 +116,13 @@
 
  <div class="list-group col-lg-3" style="padding-left: 10px;">
    <div id="side-bar" > 
-    <a href="" class="list-group-item active" style="text-align: center;font-family: 'Noto Kufi Arabic', sans-serif;
+    <a href="#" class="list-group-item active " style="text-align: center;font-family: 'Noto Kufi Arabic', sans-serif; color:white;
 "> <span >أقرا ايضا </span></a>
-    <a href="#" class="list-group-item lhover" style="text-align: right;font-family: 'Tajawal', sans-serif;"><span style="text-align: right;">أهمية المواقع </span></a>
-    <a href="#" class="list-group-item lhover" style="text-align: right;font-family: 'Tajawal', sans-serif;"><span >أنواع المواقع </span></a>
-    <a href="#" class="list-group-item lhover" style="text-align: right;font-family: 'Tajawal', sans-serif;"><span >طريقة تصميم </span></a>
-    <a href="#" class="list-group-item lhover"style="text-align: right;font-family: 'Tajawal', sans-serif;"><span >وكالة سفر </span></a>
-    <a href="#" class="list-group-item lhover"style="text-align: right;font-family: 'Tajawal', sans-serif;"><span >متجر الكتروني</span></a>
+    <a href="#" class="list-group-item " style="text-align: right;font-family: 'Tajawal', sans-serif;"><span style="text-align: right;">أهمية المواقع </span></a>
+    <a href="#" class="list-group-item " style="text-align: right;font-family: 'Tajawal', sans-serif;"><span >أنواع المواقع </span></a>
+    <a href="#" class="list-group-item " style="text-align: right;font-family: 'Tajawal', sans-serif;"><span >طريقة تصميم </span></a>
+    <a href="#" class="list-group-item "style="text-align: right;font-family: 'Tajawal', sans-serif;"><span >وكالة سفر </span></a>
+    <a href="#" class="list-group-item "style="text-align: right;font-family: 'Tajawal', sans-serif;"><span >متجر الكتروني</span></a>
 
 </div>
   </div>
@@ -113,7 +132,9 @@
 {% for article in articles %}
     <div class="row ">
       <div class="col-lg-10 col-8 post-card">
-        <h6 class="col-navyblue"><a href="{% url 'articles:detail' slug=article.slug %}" class="title lhover">{{ article.title }}</a></h6>
+        <div class="article-title">
+        <h6 ><a href="{% url 'articles:detail' slug=article.slug %}" >{{ article.title }}</a></h6>
+      </div>
         <p class="light-col">{{ article.snippet  }}  </p>
         <p class="light-col post-date">{{ article.date }}</p>
 
@@ -141,7 +162,9 @@
 
 <!--start contact us -->
 <section class="section container" id="contact">
- <div class="wow fadeInLeft"> 
-<h6 class="col-navyblue">انشر  نشاطك التجاري بالحصول على موقع الكتروني  جذاب ومميزة  </h6> <a class="" href="{% url 'contact' %}"><button type="button" class="btn btn-style-cont rounded ">تواصل معنا </button> </a></div>
+ <div class="wow fadeInLeft" id="contact-div"> 
+<h6 >أحصل على موقع يحقق طموحاتك في تطوير أعمالك التجارية</h6> <a class="" href="{% url 'contact' %}"><button type="button" class="btn btn-style-cont rounded ">تواصل معنا </button> </a></div>
 </section> 
+<!--end contact us -->
+
 {% endblock %} -->
